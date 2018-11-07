@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterPosition' => GridView::FILTER_POS_FOOTER,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-//            'id',
+            'id',
 //            'uid',
             'username',
 //            'controller',

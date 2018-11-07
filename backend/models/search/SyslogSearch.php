@@ -43,10 +43,19 @@ class SyslogSearch extends Syslog
     {
         $query = Syslog::find();
 
+
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'pageSize' => 15,
+            ],
+            'sort' => [
+                'defaultOrder' => [
+                    'id' => SORT_DESC,
+                ],
+            ],
         ]);
 
         $this->load($params);
