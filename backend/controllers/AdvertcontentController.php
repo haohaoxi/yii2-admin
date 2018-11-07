@@ -135,12 +135,6 @@ class AdvertcontentController extends BaseController
                     unlink($image_path);
                 }
             }
-//            echo "<pre>";
-//            echo $content_image;
-//            echo "<pre>";
-//            echo $model->content_image;
-//            echo "<pre>";
-//            print_r($_POST['Advertcontent']['content_image']);die;
             $model->content_image = $content_image;
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
