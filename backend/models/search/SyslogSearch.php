@@ -72,7 +72,6 @@ class SyslogSearch extends Syslog
             'uid' => $this->uid,
             'create_at' => $this->create_at,
         ]);
-
         $query->andFilterWhere(['like', 'username', $this->username])
             ->andFilterWhere(['like', 'controller', $this->controller])
             ->andFilterWhere(['like', 'models', $this->models])

@@ -40,7 +40,6 @@ class SyslogController extends baseController
         $this->_log_action = '访问了系统日志列表';
         $searchModel = new SyslogSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -68,7 +67,6 @@ class SyslogController extends baseController
     public function actionCreate()
     {
         $model = new Syslog();
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
