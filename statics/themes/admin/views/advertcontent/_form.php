@@ -19,27 +19,15 @@ $this->registerJsFile("/statics/themes/admin/js/jquery-2.2.4.min");
     <?= $form->field($model, 'enum_id')->dropDownList(Advertcontent::adtylenum_list($list = array())) ?>
     <?= $form->field($model, 'content_image')->fileInput(['multiple'=>'multiple','onchange'=>'showPreview(this);'])  ?>
     <img id="portrait" src="" style="display:none;height:200px;width:200px" />
-<!--    --><?//= $form->field($model, 'enum_id')->textInput(['maxlength' => true]) ?>
-<!--    --><?//= $form->field($model, 'content_js')->textInput(['maxlength' => true]) ?>
-<!--    --><?//= $form->field($model, 'content_created_at')->textInput(['maxlength' => true]) ?>
-<!--    --><?//= $form->field($model, 'content_updated_at')->textInput(['maxlength' => true]) ?>
-<!--    <input type="text" id="advertcontent-content_url" class="form-control" name="Advertcontent[content_url]"-->
-<!--           maxlength="255" aria-required="true">-->
     <?= $form->field($model, 'content_url')->textInput(['maxlength' => true]) ?>
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
-        <input type="button" name="but" value="测试点击">
     </div>
 
     <?php ActiveForm::end(); ?>
 
 </div>
 <script type="text/javascript">
-    window.onload = function(){
-      $(":button").on("click",function(){
-          alert(11111);
-      })
-    };
 
     // function check_input(){
     //     var myMap = new Map();
