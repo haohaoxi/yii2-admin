@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be17abea-0adc-4be8-9b09-15d2f2664414" name="Default Changelist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a2d1d3e20.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a2ee65d15.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a2ee9dd51.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a2f8a5e70.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a2f97f6b0.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a4ec91fb4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a4ef2fd1e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a4f022ba8.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a4f0c674e.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a4f1dd4e4.data" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/runtime/debug/5be3a4f305cf9.data" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/config/main.php" afterPath="$PROJECT_DIR$/common/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/runtime/debug/index.data" afterPath="$PROJECT_DIR$/storage/runtime/debug/index.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/runtime/logs/app.log" afterPath="$PROJECT_DIR$/storage/runtime/logs/app.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,21 +96,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -220,9 +197,9 @@
         <option value="$PROJECT_DIR$/backend/controllers/SyslogController.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/common/config/main.php" />
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -401,12 +378,12 @@
       <workItem from="1541553325918" duration="6834000" />
       <workItem from="1541580659528" duration="2255000" />
       <workItem from="1541649533113" duration="582000" />
-      <workItem from="1541657448943" duration="2499000" />
+      <workItem from="1541657448943" duration="2661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147617000" />
+    <option name="totallyTimeSpent" value="147779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="23" width="1518" height="877" extended-state="0" />
@@ -814,18 +791,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="75" lean-forward="true" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
