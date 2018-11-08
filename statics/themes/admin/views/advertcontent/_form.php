@@ -28,10 +28,11 @@ $this->registerJsFile("/statics/themes/admin/js/jquery-2.2.4.min");
 
 </div>
 <script type="text/javascript">
-    
-    $(document).ready(function(){
-        alert("ceshi");
-    })
+    window.onload = function(){
+        $(":submit").on("click",function(){
+           return false;
+        })
+    };
     // function check_input(){
     //     var myMap = new Map();
     //     // myMap.set('cityName', 'Beijing');
