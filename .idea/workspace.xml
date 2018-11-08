@@ -293,7 +293,7 @@
       <path value="$PROJECT_DIR$/vendor/bailangzhan/yii2-webuploader" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="11" />
     <option name="y" value="14" />
     <option name="width" value="1934" />
@@ -378,15 +378,15 @@
       <workItem from="1541468956918" duration="4180000" />
       <workItem from="1541553325918" duration="6834000" />
       <workItem from="1541580659528" duration="2255000" />
-      <workItem from="1541639254212" duration="401000" />
+      <workItem from="1541639254212" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142393000" />
+    <option name="totallyTimeSpent" value="142590000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19829424" />
