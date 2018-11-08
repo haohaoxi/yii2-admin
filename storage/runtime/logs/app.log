@@ -28134,3 +28134,142 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1541581940.183
     'REQUEST_TIME' => 1541581940
 ]
+2018-11-08 08:00:52 [127.0.0.1][-][8c893f812871ab8c6c08153864acc4a8][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Connection refused' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=127....', 'root', 'root', NULL)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('<span class="st...')
+#6 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('<span class="st...')
+#7 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->getRawSql()
+#8 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->logQuery('<span class="st...')
+#9 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#10 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Query.php(291): yii\db\Command->queryScalar()
+#11 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/DbSession.php(156): yii\db\Query->scalar(Object(yii\db\Connection))
+#12 [internal function]: yii\web\DbSession->readSession('<span class="st...')
+#13 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Session.php(137): session_start()
+#14 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Session.php(612): yii\web\Session->open()
+#15 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/User.php(683): yii\web\Session->get('<span class="st...')
+#16 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#17 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#18 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#19 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('<span class="st...')
+#20 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#21 [internal function]: yii\base\BaseObject->__construct('[<span class="s...')
+#22 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs('[[<span class="...')
+#23 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#24 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#25 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject('[<span class="s...')
+#26 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#27 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#28 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct('[]')
+#29 [internal function]: yii\base\Module->__construct('<span class="st...', Object(yii\web\Application), '[]')
+#30 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs('[<span class="s...')
+#31 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[<span class="s...', '[]')
+#32 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('<span class="st...', '[<span class="s...', '[]')
+#33 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject('[<span class="s...', '[<span class="s...')
+#34 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('<span class="st...')
+#35 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#36 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#37 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#38 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct('[<span class="s...')
+#39 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->__construct('[<span class="s...')
+#40 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Connection refused' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('<span class="st...')
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('<span class="st...')
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->getRawSql()
+#6 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(1120): yii\db\Command->logQuery('<span class="st...')
+#7 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#8 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/db/Query.php(291): yii\db\Command->queryScalar()
+#9 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/DbSession.php(156): yii\db\Query->scalar(Object(yii\db\Connection))
+#10 [internal function]: yii\web\DbSession->readSession('<span class="st...')
+#11 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Session.php(137): session_start()
+#12 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Session.php(612): yii\web\Session->open()
+#13 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/User.php(683): yii\web\Session->get('<span class="st...')
+#14 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#15 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#16 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#17 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('<span class="st...')
+#18 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#19 [internal function]: yii\base\BaseObject->__construct('[<span class="s...')
+#20 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs('[[<span class="...')
+#21 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#22 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#23 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject('[<span class="s...')
+#24 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#25 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#26 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct('[]')
+#27 [internal function]: yii\base\Module->__construct('<span class="st...', Object(yii\web\Application), '[]')
+#28 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs('[<span class="s...')
+#29 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('<span class="st...', '[<span class="s...', '[]')
+#30 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('<span class="st...', '[<span class="s...', '[]')
+#31 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject('[<span class="s...', '[<span class="s...')
+#32 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('<span class="st...')
+#33 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#34 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#35 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#36 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct('[<span class="s...')
+#37 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->__construct('[<span class="s...')
+#38 {main}
+Additional Information:
+
+2018-11-08 08:00:52 [127.0.0.1][-][8c893f812871ab8c6c08153864acc4a8][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '8c893f812871ab8c6c08153864acc4a8'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '34545eb511334b27a79e918ef2a929f0c95e5262bb9fd17a9aac8285c2c5e138a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ohpEcGN7idzIqlgaLcurb4NZkiAZgrUP\";}'
+]
+
+$_SESSION = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=config%2Fbasic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=8c893f812871ab8c6c08153864acc4a8; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=34545eb511334b27a79e918ef2a929f0c95e5262bb9fd17a9aac8285c2c5e138a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ohpEcGN7idzIqlgaLcurb4NZkiAZgrUP%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '50198'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1541660452.4
+    'REQUEST_TIME' => 1541660452
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
