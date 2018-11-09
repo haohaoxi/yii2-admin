@@ -4,13 +4,12 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Advertcontent */
-
-$this->title = '广告内容';
-$this->params['breadcrumbs'][] = ['label' => '广告模块', 'url' => ['index']];
+/* @var $model backend\models\Adverjs */
+$this->title = 'js管理';
+$this->params['breadcrumbs'][] = '广告生成js';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="advertcontent-create">
+<div class="adverjs-create">
 
     <?=$this->render('_tab_menu');?>
 

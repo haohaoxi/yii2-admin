@@ -4,17 +4,18 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\search\StatisticsSearch */
+/* @var $searchModel backend\models\search\AdverjsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = '数据列表';
-$this->params['breadcrumbs'][] = '统计广告数据';
+$this->title = 'js管理';
+$this->params['breadcrumbs'][] = '广告生成js';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="statistics-index">
+<div class="adverjs-index">
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
+    <?=$this->render('_tab_menu');?>
     <?php Pjax::begin(); ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -25,11 +26,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'admin_id',
-            'admin_name',
-            'ip',
-            'created_at',
-            //'phone_model',
-            //'phone_size',
+            'enum_id',
+            'content',
+            'content_js',
+            //'created_at',
+            //'updated_at',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

@@ -66,6 +66,7 @@ class MenuController extends BaseController
      */
     public function actionCreate()
     {
+       
         $model = new Menu();
             $this->_log_action = "添加菜单";
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -74,8 +75,6 @@ class MenuController extends BaseController
             $model->pid = Yii::$app->request->get('pid', 0);
             $arr = Menu::find()->asArray()->all();
             $treeObj = new Tree($arr);
-            $models = $this->findModel($model->pid);
-            $this->_log_action = "添加子菜单".':'.$model->pid.'....'.$models->id;
             return $this->render('create', [
                 'model' => $model,
                 'treeArr' => $treeObj->getTree(),
