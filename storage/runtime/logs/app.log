@@ -28273,3 +28273,78 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2018-11-09 06:05:20 [127.0.0.1][1][3pn992hb91v0f28e77hivd1hu5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Statistics/index".' in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('Statistics/inde...', Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\admin.php(42): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\admin.php(42): yii\base\Application->run()
+#2 {main}
+2018-11-09 06:05:19 [127.0.0.1][1][3pn992hb91v0f28e77hivd1hu5][info][application] $_GET = [
+    'r' => 'Statistics/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => 'a793be4b38d43c7d23ee0e9c570b0c1288bdc500d4dca8d424703211da8425d8a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eJQHH75I0qkfxB3GBZnRF9B_utvJvnBT\";}'
+    'advanced-frontend' => 'js87qb0muvvsgd5esb58nbbdv5'
+    '_csrf-frontend' => '68d0783a15d13ef7138e357f76319f59806eff9562de5ea5a9448aed405a1434a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cswvzn00B7es4nT3vQlfPXWAwXa04QYc\";}'
+    'PHPSESSID' => '3pn992hb91v0f28e77hivd1hu5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts\\;D:\\composer;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2320'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=Statistics%2Findex'
+    'QUERY_STRING' => 'r=Statistics%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58531'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=a793be4b38d43c7d23ee0e9c570b0c1288bdc500d4dca8d424703211da8425d8a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eJQHH75I0qkfxB3GBZnRF9B_utvJvnBT%22%3B%7D; advanced-frontend=js87qb0muvvsgd5esb58nbbdv5; _csrf-frontend=68d0783a15d13ef7138e357f76319f59806eff9562de5ea5a9448aed405a1434a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22cswvzn00B7es4nT3vQlfPXWAwXa04QYc%22%3B%7D; PHPSESSID=3pn992hb91v0f28e77hivd1hu5'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1541743519.0452
+    'REQUEST_TIME' => 1541743519
+]
