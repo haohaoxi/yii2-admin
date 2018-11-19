@@ -110,7 +110,11 @@ class AdverjsController extends BaseController
     }
 
     public function actionAjaxjs(){
-        var_dump($_GET);DIE;
+       if(Yii::$app->request->get()){
+                return "生成的js";
+            }else{
+                return 400;
+            }
     }
 
     /**

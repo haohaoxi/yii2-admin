@@ -2,7 +2,7 @@
 
 namespace backend\controllers;
 
-use         Yii;
+use Yii;
 use backend\models\Syslog;
 use backend\models\search\SyslogSearch;
 use yii\web\Controller;
@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * SyslogController implements the CRUD actions for Syslog model.
  */
-class SyslogController extends baseController
+class SyslogController extends BaseController
 {
     public $_log_module = '系统日志';
     /**
@@ -37,6 +37,7 @@ class SyslogController extends baseController
      */
     public function actionIndex()
     {
+
         $this->_log_action = '访问了系统日志列表';
         $searchModel = new SyslogSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);

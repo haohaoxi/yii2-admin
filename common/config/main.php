@@ -12,6 +12,22 @@ return [
             'charset' => 'utf8',
             'tablePrefix' => 'yunmei_',
         ],
+        'redis' => [
+            'class' => 'yii\redis\Connection',
+            'hostname' => '127.0.0.1',
+            'port' => 6379,
+            'database' => 0,
+        ],
+//        'session' => [
+//            'class' => 'yii\redis\Session',
+//            'sess' =>[
+//                'class' => 'yii\redis\Connection',
+//                'hostname' => '127.0.0.1',  //你的redis地址
+//                'port' => 6379, //端口
+//                'database' => 0,
+//            ],
+//        ],
+
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
