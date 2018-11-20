@@ -13,6 +13,7 @@ use api\functionGlobal\FunctionRand;
 class StatisController extends  ActiveController
 {
 
+
     public $modelClass = "";
     public function actions(){
         $action = parent::actions();
@@ -38,13 +39,24 @@ class StatisController extends  ActiveController
         if($in){
             echo "入队成功";
         }
+        if($in>20){
+            $i = 0;
+            $vals  = "";
         while ($value  = $redis->lpop('queue')) {
+            $i++;
+            $created_at = time();
             $value = json_decode($value,true);
             $connection = \Yii::$app->db;
-            $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values ({$value['id']},{$value['id']},'','','',''";
-            $content  = $connection->createCommand("$sql)")->execute();
+                $val = "({$value['admin_id']},'','','','','')";
+                $vals .= $val.',';
         }
+                    $content = substr($vals,0,-1);
+                $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values
+                $content";
+                $content  = $connection->createCommand("$sql")->execute();
+die;
         FunctionRand::View(1,'success','OK',1);
+        }
         die;
 //        echo "出队完成";
 //        $value = $redis->lpop('queue'); //出
