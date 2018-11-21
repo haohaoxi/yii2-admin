@@ -64,6 +64,7 @@ class StatisController extends  ActiveController
             $redis->rpush("qu",$time);
         FunctionRand::View(1,'success','OK',1);
         }
+        
         die;
         echo "出队完成";
 //        $value = $redis->lpop('queue'); //出
