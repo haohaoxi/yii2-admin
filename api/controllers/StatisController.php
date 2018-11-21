@@ -39,7 +39,9 @@ class StatisController extends  ActiveController
         if($in){
             echo "入队成功";
         }
-        if($in>20){
+//        $redis->flushdb();
+//        DIE;
+        if($in>100){
             $i = 0;
             $vals  = "";
         while ($value  = $redis->lpop('queue')) {
@@ -50,10 +52,15 @@ class StatisController extends  ActiveController
                 $val = "({$value['admin_id']},'','','','','')";
                 $vals .= $val.',';
         }
-                    $content = substr($vals,0,-1);
+                $content = substr($vals,0,-1);
+        echo $content;
+        echo "<pre>";
                 $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values
                 $content";
+                echo $sql;
+
                 $content  = $connection->createCommand("$sql")->execute();
+                var_dump($content);
 die;
         FunctionRand::View(1,'success','OK',1);
         }
