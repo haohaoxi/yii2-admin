@@ -53,16 +53,9 @@ class StatisController extends  ActiveController
                 $val = "({$value['admin_id']},'','','','','')";
                 $vals .= $val.',';
         }
-<<<<<<< HEAD
                 $content = substr($vals,0,-1);
                 $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values
                 $content";
-
-=======
-            $content = substr($vals,0,-1);
-                $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values
-                $content";
->>>>>>> 7b69a22f236c72e95e9634815913812d2889e776
                 $content  = $connection->createCommand("$sql")->execute();
 
             $t2 = microtime(true);
