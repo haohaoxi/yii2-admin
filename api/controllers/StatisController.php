@@ -13,7 +13,7 @@ use api\functionGlobal\FunctionRand;
 class StatisController extends  ActiveController
 {
 
-
+    public  $arri = array();
     public $modelClass = "";
     public function actions(){
         $action = parent::actions();
@@ -44,6 +44,7 @@ class StatisController extends  ActiveController
         if($in>50){
             $i = 0;
             $vals  = "";
+            $t1 = microtime(true);
         while ($value  = $redis->lpop('queue')) {
             $i++;
             $created_at = time();
@@ -52,17 +53,26 @@ class StatisController extends  ActiveController
                 $val = "({$value['admin_id']},'','','','','')";
                 $vals .= $val.',';
         }
+<<<<<<< HEAD
                 $content = substr($vals,0,-1);
                 $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values
                 $content";
 
+=======
+            $content = substr($vals,0,-1);
+                $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values
+                $content";
+>>>>>>> 7b69a22f236c72e95e9634815913812d2889e776
                 $content  = $connection->createCommand("$sql")->execute();
-                var_dump($content);
-die;
+
+            $t2 = microtime(true);
+            $time =  round($t2-$t1,3);
+            echo $time;
+            $redis->rpush("qu",$time);
         FunctionRand::View(1,'success','OK',1);
         }
         die;
-//        echo "出队完成";
+        echo "出队完成";
 //        $value = $redis->lpop('queue'); //出
 //        if($value){
 //            $value = json_decode($value,true);
