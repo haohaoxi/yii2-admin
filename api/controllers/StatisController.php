@@ -30,18 +30,18 @@ class StatisController extends  ActiveController
 
     public function actionThestal()
     {
+
         $redis = Yii::$app->redis;
        $data = $_REQUEST;
         $data = json_encode($data);
 
         $in = $redis->rpush('queue',$data);
-        echo $in;
-        if($in){
-            echo "入队成功";
-        }
-//        $redis->flushdb();
-//        DIE;
-        if($in>100){
+//        echo $in;
+//        if($in){
+//            echo "入队成功";
+//        }
+
+        if($in>50){
             $i = 0;
             $vals  = "";
         while ($value  = $redis->lpop('queue')) {
@@ -53,11 +53,8 @@ class StatisController extends  ActiveController
                 $vals .= $val.',';
         }
                 $content = substr($vals,0,-1);
-        echo $content;
-        echo "<pre>";
                 $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values
                 $content";
-                echo $sql;
 
                 $content  = $connection->createCommand("$sql")->execute();
                 var_dump($content);
