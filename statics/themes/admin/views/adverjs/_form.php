@@ -40,13 +40,17 @@ $this->registerJsFile("/statics/themes/admin/js/jquery-2.2.4.min.js");
    window.onload = function(){
        $("#but").click(function(){
           var content = $("textarea[name='Adverjs[content]']").val();
+          var admin_id = $("select[name='Adverjs[admin_id]']").find("option:selected").text();
+          var enum_id = $("select[name='Adverjs[enum_id]").find("option:selected").text();
           if(content){
               $.ajax({
                   type:'GET',
                   url:"<?=  Url::to(['adverjs/ajaxjs']); ?>",
-                  data:{content:content},
+                  data:{content:content,admin_id:admin_id,enum_id:enum_id},
                   dataType:'',
                   success:function(data){
+                      console.log(data);
+                      // alert(data);
                       $("textarea[name='Adverjs[content_js]']").val(data);
                    },
                   error:function(jqXHR,textStatus,errorThrown){

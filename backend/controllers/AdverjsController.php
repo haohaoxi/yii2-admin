@@ -8,7 +8,7 @@ use backend\models\search\AdverjsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use common\components\Func;
 /**
  * AdverjsController implements the CRUD actions for Adverjs model.
  */
@@ -109,9 +109,30 @@ class AdverjsController extends BaseController
         return $this->redirect(['index']);
     }
 
-    public function actionAjaxjs(){
+    public function actionAjaxjs($content,$admin_id,$enum_id){
        if(Yii::$app->request->get()){
-                return "生成的js";
+           var_dump($content);
+           if(isset($content)){
+               $arraylist = explode('-',$content);
+               $path = dirname(Yii::$app->basePath).'\\'.'statics'.'\\'.'themes\\admin\\adverjs';
+               if(!is_dir($path)){
+                   mkdir($path,0777,true);
+                   chmod($path,777);
+               }
+               sleep(1);
+               $name = Func::getAbc("5");
+               echo $path.'\\';
+               $jsfile = fopen($path.'\\'.$name.'.js', "w");
+               $text_js = Adverjs::wriTcontent();
+               fwrite($jsfile,$text_js);
+               var_dump($name);
+//               foreach($arraylist as $key=>$value){
+//
+
+//               }
+           }else{
+               return "请求失败参数为空";
+           }
             }else{
                 return 400;
             }

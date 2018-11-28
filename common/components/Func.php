@@ -64,6 +64,39 @@ class Func {
         }
     }
 
+    /**
+     * @return string
+     * 根据$list 随机获取多少个字母字母
+     * $list 必须是数字 或者是整数类型字符串
+     */
+    public static function getAbc($list){
+        if(!is_numeric($list)){
+            return "参数数据类型错误";
+        }
+        $abc = "";
+        $arrAbc = array('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+        if(isset($arrAbc) && is_array($arrAbc)){    //判断数据是否符合
+                for ($i = 1; $i <=$list; $i++ ){         //循环3次获取来获取三个字母
+                    $number = rand(0,count($arrAbc)-1); //统计数组个数数组下标是以0开头所以-1
+                    foreach($arrAbc as $key=>$value){  //遍历数组 根据随机数条件来获取需要的值返回$abc空的变量里面
+                        if($number===$key){
+                            $abc .= $value;
+                           continue;
+                        }
+                    }
+                }
+                if(is_string($abc) && isset($abc)){
+                    return $abc;
+                }else{
+                    return "参数请求正确但返回数据错误";
+                }
+
+        }else{
+            return "参数丢失";
+        }
+
+}
+
     public static function updateimage($image){
         if($image->name){
             $file_ext = $image->getExtension(); //截取原图片名称后缀

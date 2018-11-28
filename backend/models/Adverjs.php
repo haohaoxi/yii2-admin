@@ -33,7 +33,7 @@ class Adverjs extends \yii\db\ActiveRecord
         return [
             [['admin_id', 'enum_id', 'content', 'created_at'], 'required'],
             [['admin_id', 'enum_id', 'created_at', 'updated_at'], 'integer'],
-            [['content', 'content_js'], 'string', 'max' => 255],
+            [['content', 'content_js'], 'string', 'max' => 1000],
         ];
     }
 
@@ -51,5 +51,14 @@ class Adverjs extends \yii\db\ActiveRecord
             'created_at' => '添加时间',
             'updated_at' => '更新时间',
         ];
+    }
+
+    public static function wriTcontent(){
+        return "url = 'http://images.hnguangyuan.cn/react.js?id=1190';
+        let script = document.createElement('script');
+        script.src = url
+        script.id = 'adver'
+        script.type = 'text/javascript'
+     document.getElementsByTagName('head')[0].appendChild(script)";
     }
 }
