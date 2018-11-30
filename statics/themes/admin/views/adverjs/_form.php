@@ -40,8 +40,8 @@ $this->registerJsFile("/statics/themes/admin/js/jquery-2.2.4.min.js");
    window.onload = function(){
        $("#but").click(function(){
           var content = $("textarea[name='Adverjs[content]']").val();
-          var admin_id = $("select[name='Adverjs[admin_id]']").find("option:selected").text();
-          var enum_id = $("select[name='Adverjs[enum_id]").find("option:selected").text();
+          var admin_id = $("select[name='Adverjs[admin_id]']").val();
+          var enum_id = $("select[name='Adverjs[enum_id]").val();
           if(content){
               $.ajax({
                   type:'GET',

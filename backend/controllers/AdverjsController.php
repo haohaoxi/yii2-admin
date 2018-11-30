@@ -110,25 +110,30 @@ class AdverjsController extends BaseController
     }
 
     public function actionAjaxjs($content,$admin_id,$enum_id){
+        $pathurl = "";
+        $addurl = Yii::$app->request->hostInfo;
+        $path = '\\'.'statics'.'\\'.'themes\\admin\\adverjs\\';
        if(Yii::$app->request->get()){
-           var_dump($content);
            if(isset($content)){
                $arraylist = explode('-',$content);
-               $path = dirname(Yii::$app->basePath).'\\'.'statics'.'\\'.'themes\\admin\\adverjs';
-               if(!is_dir($path)){
-                   mkdir($path,0777,true);
-                   chmod($path,777);
+               $pathadd = dirname(Yii::$app->basePath).$path;//js文件的绝对路径
+               if(!is_dir($pathadd)){
+                   mkdir($pathadd,0777,true);
+                   chmod($pathadd,777);
                }
                sleep(1);
-               $name = Func::getAbc("5");
-               echo $path.'\\';
-               $jsfile = fopen($path.'\\'.$name.'.js', "w");
-               $text_js = Adverjs::wriTcontent();
-               fwrite($jsfile,$text_js);
-               var_dump($name);
+               $name = Func::getAbc("5");//获得js文件名称
+               $text_js = Adverjs::wriTcontent($arraylist,$admin_id,$enum_id,$addurl);
+               $jsfile = fopen($pathadd.'\\'.$name.'.js', "w"); //有就打开没有则创建的js文件名称
+               fwrite($jsfile,$text_js);//写入文件内容
+               fclose($jsfile);//关闭文件
+                $pathurl .= "<script type='text/javascript'  ";//返回生成js的地址
+                $pathurl .= 'src = "';
+                $pathurl .=strtr($addurl.$path.$name.'.js','\\','/').'"'."></script>";
+               return $pathurl;
+               die;
 //               foreach($arraylist as $key=>$value){
 //
-
 //               }
            }else{
                return "请求失败参数为空";

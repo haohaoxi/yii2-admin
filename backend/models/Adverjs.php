@@ -53,12 +53,34 @@ class Adverjs extends \yii\db\ActiveRecord
         ];
     }
 
-    public static function wriTcontent(){
-        return "url = 'http://images.hnguangyuan.cn/react.js?id=1190';
+    /**
+     * @param $arraylist array 路由数组
+     * @param $admin_id  string 用户唯一标识名称
+     * @param $enum_id   string 类型名称 暂时没有用处
+     * @param $addurl    string 数据返回地址
+     * @return string   返回值 js数据
+     */
+    public static function wriTcontent($arraylist,$admin_id,$enum_id,$addurl){
+      $count = count($arraylist);
+      $json = json_encode((object)$arraylist);
+      if($count ==1){
+          $count = 0;
+      }
+
+        return "window.onload = function(){
+        var json = $json;
+        var randomNum = Math.round(Math.random() * $count);
+        var  url = json[randomNum];
         let script = document.createElement('script');
         script.src = url
         script.id = 'adver'
         script.type = 'text/javascript'
-     document.getElementsByTagName('head')[0].appendChild(script)";
+        document.getElementsByTagName('head')[0].appendChild(script);
+        let scripts = document.createElement('script');
+        scripts.src = '$addurl/statis/thestal?admin_id=1&name=$admin_id&enumlist=$enum_id';
+        scripts.id = 'adver'
+        scripts.type = 'text/javascript'
+        document.getElementsByTagName('head')[0].appendChild(scripts);
+            }";
     }
 }
