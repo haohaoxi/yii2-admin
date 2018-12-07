@@ -132,9 +132,6 @@ class AdverjsController extends BaseController
                 $pathurl .=strtr($addurl.$path.$name.'.js','\\','/').'"'."></script>";
                return $pathurl;
                die;
-//               foreach($arraylist as $key=>$value){
-//
-//               }
            }else{
                return "请求失败参数为空";
            }
