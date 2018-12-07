@@ -36,55 +36,63 @@ class StatisController extends  ActiveController
         if(Yii::$app->request->get()){
             $redis = Yii::$app->redis;
             if($_REQUEST){
+                $_REQUEST['created_at'] = time();
                 $data = json_encode($_REQUEST);
+//                var_dump($data);
                 $push = $redis->lpush("queue",$data);//入队 列表
                 $redis->set("list",$push);
                 echo $push;
-                if($push){
-                    echo "入队成功";
-                }
-               FunctionRand::View(1,'success','ok',1);
+//                if($push){
+//                    echo "入队成功";
+//                }
+//               FunctionRand::View(1,'success','ok',1);
             }else{
-                FunctionRand::Error('2','请求参数不正确');
+//                FunctionRand::Error('2','请求参数不正确');
             }
 
-            FunctionRand::View(1,'success','OK',1);
+//            FunctionRand::View(1,'success','OK',1);
         }else{
-            FunctionRand::Error('2','请求方式错误');
+//            FunctionRand::Error('2','请求方式错误');
         }
 
     }
 
     public function actionThelpop(){
         $redis = Yii::$app->redis;
-        var_dump($redis->get("list"));
+//        var_dump($redis->get("list"));
 
-        if($redis->get("list")>10){
+        if($redis->get("list")){
+            $connection = \Yii::$app->db;
             $vals = "";
             $statime = microtime(true);
         while($lpop = $redis->lpop("queue")){
             $value = json_decode($lpop,true);
-            $connection = \Yii::$app->db;
-            $val = "({$value['admin_id']},'','','','','')";
+
+//            var_dump($value);
+
+            $val = "({$value['admin_id']},'{$value['admin_name']}','{$value['ip']}','{$value['created_at']}','{$value['phone_model']}','{$value['phone_size']}','{$value['phone_pc']}')";
             $vals .= $val.',';
         }
+
+        var_dump($vals);
         $content = substr($vals,0,-1);
-        $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size) values $content";
+        $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size,phone_pc) values $content";
+//        echo $sql;
         $content  = $connection->createCommand("$sql")->execute();
-        $endtiem = microtime(true);
-        $end = round($endtiem-$statime,3);
-        echo '结束时间减去开始时间:'.$end;
-            $redis->rpush("qu",$end);
-            echo 1111;$redis->del("list");
+//        $endtiem = microtime(true);
+//        $end = round($endtiem-$statime,3);
+//        echo '结束时间减去开始时间:'.$end;
+//            $redis->rpush("qu",$end);
+//            echo 1111;
+            $redis->del("list");
             FunctionRand::View(3,'success','Nok','队列满足50条插入成功');
 
-            die;
-        }
-        else{
+//            die;
+        } else{
             FunctionRand::View(3,'success','Nok','2');
-            die;
+//            die;
         }
-        die;
+//        die;
     }
 
     /**

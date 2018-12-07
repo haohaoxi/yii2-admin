@@ -24,10 +24,6 @@ $this->registerJsFile("/statics/themes/admin/js/jquery-2.2.4.min.js");
 
     <?= $form->field($model, 'content_js')->textarea(['maxlength' => true,'rows'=>3]) ?>
 
-    <?= $form->field($model, 'created_at')->textInput() ?>
-
-    <?= $form->field($model, 'updated_at')->textInput() ?>
-
     <div class="form-group">
         <?= Html::submitButton('添加', ['class' => 'btn btn-success']) ?>
         <?= Html::button('生成', ['class' => 'btn btn-success','id'=>'but']) ?>
