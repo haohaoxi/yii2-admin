@@ -25,7 +25,7 @@
     }
         var phone_pc =   browserRedirect();
        
-        var json = {"0":"1111"};
+        var json = {"0":"1111111","1":"222"};
         var randomNum = Math.round(Math.random() * 0);
         var  url = json[randomNum];
         let script = document.createElement('script');

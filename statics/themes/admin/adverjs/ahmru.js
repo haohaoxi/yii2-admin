@@ -1,4 +1,3 @@
-let scriptr = document.createElement('script');
 scriptr.src = 'http://adcyii.com/statics/themes/admin/adverjs/mobile-detect.js';
 scriptr.id = 'adverr'
 scriptr.type = 'text/javascript'
