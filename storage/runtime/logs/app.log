@@ -29374,6 +29374,7 @@ $_SERVER = [
     'REQUEST_TIME' => 1544000440
 ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 2018-12-11 01:12:49 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
 
 in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
@@ -29389,6 +29390,8 @@ Stack trace:
 #7 {main}
 2018-12-11 01:12:47 [127.0.0.1][1][-][info][application] $_GET = []
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 2018-12-07 09:18:28 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
 
 in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
@@ -29403,6 +29406,9 @@ Stack trace:
 #6 [internal function]: yii\log\Logger->flush(true)
 #7 {main}
 2018-12-07 09:18:28 [127.0.0.1][1][-][info][application] $_GET = []
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 
 $_POST = []
@@ -29411,18 +29417,25 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -29485,6 +29498,8 @@ Stack trace:
 2018-12-11 01:12:53 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'statistics/index'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -29536,6 +29551,9 @@ Stack trace:
 #7 {main}
 2018-12-07 09:18:32 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -29545,20 +29563,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -29621,6 +29646,8 @@ Stack trace:
 #7 {main}
 2018-12-11 01:15:50 [127.0.0.1][1][-][info][application] $_GET = [
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -29674,6 +29701,9 @@ Stack trace:
 #6 [internal function]: yii\log\Logger->flush(true)
 #7 {main}
 2018-12-07 10:19:21 [127.0.0.1][1][-][info][application] $_GET = [
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'r' => 'adverjs/index'
 ]
@@ -29684,20 +29714,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -29761,6 +29798,8 @@ Stack trace:
 2018-12-11 01:15:53 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -29817,6 +29856,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:19:25 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -29826,20 +29868,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -29903,6 +29952,8 @@ Stack trace:
 2018-12-11 01:17:18 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -29959,6 +30010,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:19:57 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adtylenum/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -29968,20 +30022,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -30046,6 +30107,8 @@ Stack trace:
 2018-12-11 01:17:22 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -30102,6 +30165,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:20:50 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adtylenum/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -30111,20 +30177,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -30189,6 +30262,8 @@ Stack trace:
 2018-12-11 01:17:26 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -30244,6 +30319,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:21:03 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'config/basic'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -30253,20 +30331,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -30331,6 +30416,8 @@ Stack trace:
 2018-12-11 01:17:31 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -30387,6 +30474,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:21:09 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'config/basic'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -30396,20 +30486,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -30474,6 +30571,8 @@ Stack trace:
 2018-12-11 01:17:35 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -30530,6 +30629,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:21:16 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'config/basic'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -30539,20 +30641,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -30617,6 +30726,8 @@ Stack trace:
 2018-12-11 01:17:43 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -30672,6 +30783,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:21:21 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'menu/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -30681,20 +30795,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -30759,6 +30880,8 @@ Stack trace:
 2018-12-11 01:17:47 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -30815,6 +30938,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:21:30 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'admin/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -30824,20 +30950,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -30902,6 +31035,8 @@ Stack trace:
 2018-12-11 01:18:21 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -30958,6 +31093,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:22:08 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'admin/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -30967,20 +31105,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -31048,6 +31193,8 @@ Stack trace:
     'admin_id' => '24'
     'enum_id' => '6'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -31104,6 +31251,9 @@ Stack trace:
 #7 {main}
 2018-12-07 10:22:11 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'role/index'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
@@ -31113,20 +31263,27 @@ $_FILES = []
 
 $_COOKIE = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
     '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
     'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
     '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
 <<<<<<< HEAD
     '__id' => '1'
 ]
@@ -31175,6 +31332,8 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1544491120.5409
     'REQUEST_TIME' => 1544491120
 =======
+=======
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     '__returnUrl' => '/admin.php'
     '__id' => 1
 ]
@@ -32995,5 +33154,8 @@ $_SERVER = [
         0 => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
     ]
     'argc' => 1
+<<<<<<< HEAD
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
+=======
 >>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
