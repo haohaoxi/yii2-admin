@@ -29373,6 +29373,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1544000440.2254
     'REQUEST_TIME' => 1544000440
 ]
+<<<<<<< HEAD
 2018-12-11 01:12:49 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
 
 in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
@@ -29387,17 +29388,42 @@ Stack trace:
 #6 [internal function]: yii\log\Logger->flush(true)
 #7 {main}
 2018-12-11 01:12:47 [127.0.0.1][1][-][info][application] $_GET = []
+=======
+2018-12-07 09:18:28 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 09:18:28 [127.0.0.1][1][-][info][application] $_GET = []
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29458,6 +29484,59 @@ Stack trace:
 #7 {main}
 2018-12-11 01:12:53 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'statistics/index'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.1 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '57852'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin.php'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174308.493
+    'REQUEST_TIME' => 1544174308
+    'argv' => []
+    'argc' => 0
+]
+2018-12-07 09:18:32 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 09:18:32 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -29465,13 +29544,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29532,6 +29620,61 @@ Stack trace:
 #6 [internal function]: yii\log\Logger->flush(true)
 #7 {main}
 2018-12-11 01:15:50 [127.0.0.1][1][-][info][application] $_GET = [
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.1 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '57855'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Findex'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174312.391
+    'REQUEST_TIME' => 1544174312
+    'argv' => [
+        0 => 'r=adverjs%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:19:22 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:19:21 [127.0.0.1][1][-][info][application] $_GET = [
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
     'r' => 'adverjs/index'
 ]
 
@@ -29540,13 +29683,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29608,6 +29760,64 @@ Stack trace:
 #7 {main}
 2018-12-11 01:15:53 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58087'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Findex'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174361.56
+    'REQUEST_TIME' => 1544174361
+    'argv' => [
+        0 => 'r=adverjs%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:19:25 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:19:25 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -29615,13 +29825,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29683,6 +29902,64 @@ Stack trace:
 #7 {main}
 2018-12-11 01:17:18 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58087'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Findex'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174365.4
+    'REQUEST_TIME' => 1544174365
+    'argv' => [
+        0 => 'r=adverjs%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:19:57 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:19:57 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adtylenum/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -29690,13 +29967,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29759,6 +30045,64 @@ Stack trace:
 #7 {main}
 2018-12-11 01:17:22 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adtylenum%2Findex'
+    'REQUEST_URI' => '/admin.php?r=adtylenum%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174397.35
+    'REQUEST_TIME' => 1544174397
+    'argv' => [
+        0 => 'r=adtylenum%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:20:50 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:20:50 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adtylenum/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -29766,13 +30110,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29835,6 +30188,63 @@ Stack trace:
 #7 {main}
 2018-12-11 01:17:26 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58479'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adtylenum%2Findex'
+    'REQUEST_URI' => '/admin.php?r=adtylenum%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174450.05
+    'REQUEST_TIME' => 1544174450
+    'argv' => [
+        0 => 'r=adtylenum%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:21:03 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:21:03 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'config/basic'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -29842,13 +30252,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29911,6 +30330,64 @@ Stack trace:
 #7 {main}
 2018-12-11 01:17:31 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adtylenum%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58534'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=config%2Fbasic'
+    'REQUEST_URI' => '/admin.php?r=config%2Fbasic'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174463.69
+    'REQUEST_TIME' => 1544174463
+    'argv' => [
+        0 => 'r=config%2Fbasic'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:21:09 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:21:09 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'config/basic'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -29918,13 +30395,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -29987,6 +30473,64 @@ Stack trace:
 #7 {main}
 2018-12-11 01:17:35 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adtylenum%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58545'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=config%2Fbasic'
+    'REQUEST_URI' => '/admin.php?r=config%2Fbasic'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174469.07
+    'REQUEST_TIME' => 1544174469
+    'argv' => [
+        0 => 'r=config%2Fbasic'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:21:16 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:21:16 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'config/basic'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -29994,13 +30538,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -30063,6 +30616,63 @@ Stack trace:
 #7 {main}
 2018-12-11 01:17:43 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58604'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=config%2Fbasic'
+    'REQUEST_URI' => '/admin.php?r=config%2Fbasic'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174476.08
+    'REQUEST_TIME' => 1544174476
+    'argv' => [
+        0 => 'r=config%2Fbasic'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:21:21 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:21:21 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'menu/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -30070,13 +30680,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -30139,6 +30758,64 @@ Stack trace:
 #7 {main}
 2018-12-11 01:17:47 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=config%2Fbasic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58608'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174481.26
+    'REQUEST_TIME' => 1544174481
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:21:30 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:21:30 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -30146,13 +30823,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -30215,6 +30901,64 @@ Stack trace:
 #7 {main}
 2018-12-11 01:18:21 [127.0.0.1][1][-][info][application] $_GET = [
     'r' => 'adverjs/create'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=menu%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58678'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/admin.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174490.34
+    'REQUEST_TIME' => 1544174490
+    'argv' => [
+        0 => 'r=admin%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:22:08 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:22:08 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'admin/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -30222,13 +30966,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -30294,6 +31047,64 @@ Stack trace:
     'content' => '232222-3333-444444444'
     'admin_id' => '24'
     'enum_id' => '6'
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58839'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/admin.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174528.56
+    'REQUEST_TIME' => 1544174528
+    'argv' => [
+        0 => 'r=admin%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:22:12 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:22:11 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'role/index'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_POST = []
@@ -30301,13 +31112,22 @@ $_POST = []
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
     'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
     '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+=======
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__id' => '1'
 ]
 
@@ -30354,4 +31174,1826 @@ $_SERVER = [
     'PHP_SELF' => '/admin.php'
     'REQUEST_TIME_FLOAT' => 1544491120.5409
     'REQUEST_TIME' => 1544491120
+=======
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58850'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=role%2Findex'
+    'REQUEST_URI' => '/admin.php?r=role%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174531.9
+    'REQUEST_TIME' => 1544174531
+    'argv' => [
+        0 => 'r=role%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:22:15 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:22:15 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'config/basic'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=role%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58839'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=config%2Fbasic'
+    'REQUEST_URI' => '/admin.php?r=config%2Fbasic'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174535.38
+    'REQUEST_TIME' => 1544174535
+    'argv' => [
+        0 => 'r=config%2Fbasic'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:22:23 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:22:23 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=config%2Fbasic'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58912'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174543.14
+    'REQUEST_TIME' => 1544174543
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:22:27 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:22:27 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=menu%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58914'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174547.17
+    'REQUEST_TIME' => 1544174547
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:22:34 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:22:34 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=menu%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '58966'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174554.57
+    'REQUEST_TIME' => 1544174554
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:22:58 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:22:58 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=menu%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '59077'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174578.64
+    'REQUEST_TIME' => 1544174578
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:23:09 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:23:09 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=menu%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '59128'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544174589.12
+    'REQUEST_TIME' => 1544174589
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:44:05 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:44:05 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'menu/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=menu%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '64311'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=menu%2Findex'
+    'REQUEST_URI' => '/admin.php?r=menu%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544175845.27
+    'REQUEST_TIME' => 1544175845
+    'argv' => [
+        0 => 'r=menu%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:44:43 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:44:43 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=menu%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '64475'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Findex'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Findex'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544175883.12
+    'REQUEST_TIME' => 1544175883
+    'argv' => [
+        0 => 'r=adverjs%2Findex'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:44:46 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:44:46 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '64479'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544175886.37
+    'REQUEST_TIME' => 1544175886
+    'argv' => [
+        0 => 'r=adverjs%2Fcreate'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:44:52 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:44:52 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '1111111-222'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'jzfRVjkjxmJGGfYbgtoB47ZAAIXKAACp8gFNdDyK5Y7Jdbo3d1KcNg8qxmzO73CC2RFM9700acSrWzsiD_qIxw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '64518'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544175892.72
+    'REQUEST_TIME' => 1544175892
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:48:14 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:48:14 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '65348'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176094.27
+    'REQUEST_TIME' => 1544176094
+    'argv' => [
+        0 => 'r=adverjs%2Fcreate'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:48:16 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:48:16 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '1111111-222'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'lLRR5MA6gJNkIUPQl_uAgvL2jnjqSExCEMZAN9yt1gXS9jqFjkvaxy0Sc6fbzvHjnafCCp18JS9JnDZh7927TA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '65366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176096.68
+    'REQUEST_TIME' => 1544176096
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:49:53 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:49:52 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '1111111-222'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'lLRR5MA6gJNkIUPQl_uAgvL2jnjqSExCEMZAN9yt1gXS9jqFjkvaxy0Sc6fbzvHjnafCCp18JS9JnDZh7927TA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '49395'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176192.9
+    'REQUEST_TIME' => 1544176192
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:50:12 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51842 bytes' 
+
+in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', '/Applications/M...', 98, Array)
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(98): unserialize('<<<<<<< HEAD\na:...')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('/Applications/M...', Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2-debug/src/LogTarget.php(128): yii\debug\LogTarget->export()
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-07 10:50:12 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '49471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176212.03
+    'REQUEST_TIME' => 1544176212
+    'argv' => [
+        0 => 'r=adverjs%2Fcreate'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:50:15 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 120.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 10:50:14 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '1111111-222'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'Lxpyh-5UFNLczfYMswLrYa4DwpeKsgiTAuYV0XUt2NJpWBnmoCVOhpX-xnv_N5oAwVKO5f2GYf5bvGOHRl21mw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '49477'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176214.71
+    'REQUEST_TIME' => 1544176214
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=1111111-222&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:58:03 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 120.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 10:58:02 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '11111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'BcffzQnQ2hXB9purCCbKRjdRpSClG9Otgcd4mS5CckpDhbSsR6GAQYjFq9xEE7snWADpUtIvusDYnQ7PHTIfAw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '51636'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=11111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=11111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176682.15
+    'REQUEST_TIME' => 1544176682
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=11111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 10:58:22 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 120.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 10:58:21 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '111111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '2xOu49KLdzp7BumfFVBZi__M7oB5fNrRqlq_YQpsbqSdUcWCnPotbjI12ehZZSjqkJ2i8g5Is7zzAMk3ORwD7Q=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '51676'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=111111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=111111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176701.58
+    'REQUEST_TIME' => 1544176701
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=111111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 11:02:12 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 120.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 11:02:11 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '1111111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'gm5mRCvFVbkCf-dKQlKBTciycybwYY9jySgToFvmEbfELA0lZbQP7UtM1z0OZ_Asp-M_VIdV5g6QcmX2aJZ8_g=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '52673'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=1111111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=1111111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176931.15
+    'REQUEST_TIME' => 1544176931
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=1111111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 11:02:44 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 120.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 11:02:43 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '1111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'i_u9-vRjM5DW7zN2rXjjw3sFPRSb3vSxb6WXrZg8PBzNudabuhJpxJ_cAwHhTZKiFFRxZuzqndw2_-H7q0xRVQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '52797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=1111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=1111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544176963.6
+    'REQUEST_TIME' => 1544176963
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=1111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 11:07:08 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 120.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 11:07:07 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '1321321'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'pIADik1mxYQ0P9DrFVf7xYNSbv5WBWHgY9o4E78R-L7iwmjrAxef0H0M4JxZYoqk7AMijCExCI06gE5FjGGV9w=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '53923'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=1321321&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=1321321&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544177227.27
+    'REQUEST_TIME' => 1544177227
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=1321321&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 11:08:00 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 120.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 11:07:59 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => 'dasds'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    'PHPSESSID' => '4fpeh49asndmefps3ehujf98cj'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'wy-9W3tcrjxGWiwaZouu9E25LMtDXhEXV5oVMRG3MhGFbdY6NS30aA9pHG0qvt-VIuhguTRqeHoOwGNnIsdfWA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; PHPSESSID=4fpeh49asndmefps3ehujf98cj; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '54159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=dasds&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=dasds&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544177279.37
+    'REQUEST_TIME' => 1544177279
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=dasds&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 13:07:22 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 126.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 13:07:21 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+    'PHPSESSID' => '956e72af51c457b12e28b4ade0faff8f'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'XTehd1YddFdGGTZdhuCyeurfkz92vr6GGbgq5Ej7m0EbdcoWGGwuAw8qBirK1cMbhY7fTQGK1-tA4lyye4v2CA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D; PHPSESSID=956e72af51c457b12e28b4ade0faff8f'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '60416'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544184441.58
+    'REQUEST_TIME' => 1544184441
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 13:07:38 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 126.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 13:07:37 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+    'PHPSESSID' => '956e72af51c457b12e28b4ade0faff8f'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'XTehd1YddFdGGTZdhuCyeurfkz92vr6GGbgq5Ej7m0EbdcoWGGwuAw8qBirK1cMbhY7fTQGK1-tA4lyye4v2CA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D; PHPSESSID=956e72af51c457b12e28b4ade0faff8f'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '60481'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544184457.47
+    'REQUEST_TIME' => 1544184457
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 13:08:37 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php on line 126.' in /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#3 {main}
+2018-12-07 13:08:35 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+    'PHPSESSID' => '956e72af51c457b12e28b4ade0faff8f'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'XTehd1YddFdGGTZdhuCyeurfkz92vr6GGbgq5Ej7m0EbdcoWGGwuAw8qBirK1cMbhY7fTQGK1-tA4lyye4v2CA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D; PHPSESSID=956e72af51c457b12e28b4ade0faff8f'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '60731'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544184515.92
+    'REQUEST_TIME' => 1544184515
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+]
+2018-12-07 13:11:55 [127.0.0.1][1][956e72af51c457b12e28b4ade0faff8f][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Division by zero' in /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php:134
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii2-admin/backend/controllers/AdverjsController.php(134): yii\base\ErrorHandler->handleError(2, 'Division by zer...', '/Applications/M...', 134, Array)
+#1 [internal function]: backend\controllers\AdverjsController->actionAjaxjs('111', '24', '6')
+#2 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('ajaxjs', Array)
+#5 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('adverjs/ajaxjs', Array)
+#6 /Applications/MAMP/htdocs/yii2-admin/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/yii2-admin/admin.php(42): yii\base\Application->run()
+#8 {main}
+2018-12-07 13:11:53 [127.0.0.1][1][956e72af51c457b12e28b4ade0faff8f][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '111'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'qdshf9g4lf31er7ka04orc5om0'
+    '_csrf-frontend' => '2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx\";}'
+    '_identity-backend' => '4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    '_csrf-backend' => '5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI\";}'
+    'PHPSESSID' => '956e72af51c457b12e28b4ade0faff8f'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adcyii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'XTehd1YddFdGGTZdhuCyeurfkz92vr6GGbgq5Ej7m0EbdcoWGGwuAw8qBirK1cMbhY7fTQGK1-tA4lyye4v2CA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=qdshf9g4lf31er7ka04orc5om0; _csrf-frontend=2a99fafcab9bfc4f4131e40963f4b45d1369fe89a3301368e54b507ffbb6598ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PKH5hj-VUz5GES0Atgh-gbntk4KxCTvx%22%3B%7D; _identity-backend=4ff4ad264e3c9d7fe4c230e3570c87c1cae912a0bed12123b80c0c13222b491ca%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; _csrf-backend=5f9041a2464dfe92011b483fe164374eb9e2330f262710d16d35ca1c397cdca6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22FBkaNqZTI30wL5qaoQLrw4imYZvV3pmI%22%3B%7D; PHPSESSID=956e72af51c457b12e28b4ade0faff8f'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/5.6.32 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/yii2-admin'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/yii2-admin/admin.php'
+    'REMOTE_PORT' => '61582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    'SCRIPT_NAME' => '/admin.php'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544184713.98
+    'REQUEST_TIME' => 1544184713
+    'argv' => [
+        0 => 'r=adverjs%2Fajaxjs&content=111&admin_id=24&enum_id=6'
+    ]
+    'argc' => 1
+>>>>>>> 38b94fbb63f308c03c7a8754779a0b3b89dbd0a2
 ]
