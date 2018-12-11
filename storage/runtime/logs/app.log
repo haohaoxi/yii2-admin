@@ -29373,3 +29373,985 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1544000440.2254
     'REQUEST_TIME' => 1544000440
 ]
+2018-12-11 01:12:49 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:12:47 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-7.2.1-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57844'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544490767.7641
+    'REQUEST_TIME' => 1544490767
+]
+2018-12-11 01:12:54 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:12:53 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'statistics/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-7.2.1-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=statistics%2Findex'
+    'QUERY_STRING' => 'r=statistics%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57844'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544490773.0163
+    'REQUEST_TIME' => 1544490773
+]
+2018-12-11 01:15:51 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:15:50 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-7.2.1-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Findex'
+    'QUERY_STRING' => 'r=adverjs%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58727'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=statistics%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544490950.2496
+    'REQUEST_TIME' => 1544490950
+]
+2018-12-11 01:15:55 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:15:53 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-7.2.1-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58727'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544490953.8779
+    'REQUEST_TIME' => 1544490953
+]
+2018-12-11 01:17:19 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:17:18 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59211'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491038.3449
+    'REQUEST_TIME' => 1544491038
+]
+2018-12-11 01:17:24 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:17:22 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59211'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491042.7702
+    'REQUEST_TIME' => 1544491042
+]
+2018-12-11 01:17:28 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:17:26 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59211'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491046.7424
+    'REQUEST_TIME' => 1544491046
+]
+2018-12-11 01:17:32 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:17:31 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59211'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491051.0707
+    'REQUEST_TIME' => 1544491051
+]
+2018-12-11 01:17:36 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:17:35 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59211'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491055.3545
+    'REQUEST_TIME' => 1544491055
+]
+2018-12-11 01:17:44 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:17:43 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59498'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491063.2347
+    'REQUEST_TIME' => 1544491063
+]
+2018-12-11 01:17:48 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:17:47 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59498'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491067.2569
+    'REQUEST_TIME' => 1544491067
+]
+2018-12-11 01:18:23 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:18:21 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-7.2.1-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fcreate'
+    'QUERY_STRING' => 'r=adverjs%2Fcreate'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59830'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491101.9669
+    'REQUEST_TIME' => 1544491101
+]
+2018-12-11 01:18:42 [127.0.0.1][1][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 51851 bytes' 
+
+in D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php:98
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\phpStudy\\PHP...', 98, Array)
+#1 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(98): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(73): yii\debug\LogTarget->updateIndexFile('D:\\phpStudy\\PHP...', Array)
+#3 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2-debug\src\LogTarget.php(128): yii\debug\LogTarget->export()
+#4 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect(Array, true)
+#5 D:\phpStudy\PHPTutorial\WWW\yii2-admin\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2018-12-11 01:18:40 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'adverjs/ajaxjs'
+    'content' => '232222-3333-444444444'
+    'admin_id' => '24'
+    'enum_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"1\",\"SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ\",2592000]\";}'
+    'PHPSESSID' => 'n3qb73bl48bguvjlict6ct496g'
+    '_csrf-backend' => 'a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"1AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\phpStudy\\PHPTutorial\\php\\php-7.2.1-nts\\;D:\\composer;C:\\redis;D:\\put\\;C:\\Users\\ss\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ss\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/PHPTutorial/php/php-7.2.1-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/admin.php'
+    'REQUEST_URI' => '/admin.php?r=adverjs%2Fajaxjs&content=232222-3333-444444444&admin_id=24&enum_id=6'
+    'QUERY_STRING' => 'r=adverjs%2Fajaxjs&content=232222-3333-444444444&admin_id=24&enum_id=6'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59896'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin/admin.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/PHPTutorial/WWW/yii2-admin'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'adcyii.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=ea1def92cf50715502d683975e595347ef279489965f5df495a5ee061d4b720aa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ%22%2C2592000%5D%22%3B%7D; PHPSESSID=n3qb73bl48bguvjlict6ct496g; _csrf-backend=a877529a9fee7e8cfe17d3d8a4d7583a70f3b46caefaa9b6e52155622b168d2da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%221AXWtVFh-TBkbIQnkCY2ZhhlSi_0wjr1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://adcyii.com/admin.php?r=adverjs%2Fcreate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_CSRF_TOKEN' => 'iE2Adw9yU68jm-xqcXHBbzdyBeHrD99qx5hDyzURoue5DNggeyQVxw7PrgETOJABXDFc07FntwaU8Rz7QnvQ1g=='
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'adcyii.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/admin.php'
+    'REQUEST_TIME_FLOAT' => 1544491120.5409
+    'REQUEST_TIME' => 1544491120
+]
