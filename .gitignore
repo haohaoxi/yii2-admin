@@ -11,10 +11,10 @@ composer.phar
 
 # Mac DS_Store Files
 .DS_Store
-storage/app.log
-storage/index.data
-storage/runtime/debug/
-storage/assets/
-storage/runtime/logs/
+/storage/app.log
+/storage/index.data
+/storage/runtime/debug/
+/storage/assets/
+/storage/runtime/logs/
 /.dea/
 
