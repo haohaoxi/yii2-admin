@@ -13,5 +13,7 @@ composer.phar
 .DS_Store
 storage/app.log
 storage/index.data
+debug/
+assets/
 /.dea/
 
