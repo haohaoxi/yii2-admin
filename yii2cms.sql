@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : localhost
+ Source Server         : 本机
  Source Server Type    : MySQL
- Source Server Version : 50638
- Source Host           : 127.0.0.1:8889
+ Source Server Version : 50553
+ Source Host           : 127.0.0.1:3306
  Source Schema         : yii2cms
 
  Target Server Type    : MySQL
- Target Server Version : 50638
+ Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 21/11/2018 09:33:55
+ Date: 12/12/2018 16:16:20
 */
 
 SET NAMES utf8mb4;
@@ -21,151 +21,177 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- Table structure for yunmei_admin
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_admin`;
-CREATE TABLE `yunmei_admin` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL COMMENT '用户名',
-  `series_number` varchar(100) NOT NULL COMMENT '用户唯一标识',
+CREATE TABLE `yunmei_admin`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户名',
+  `series_number` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户唯一标识',
   `user_type` tinyint(4) NOT NULL COMMENT '用户类型1(普通用户)用户2(广告商)',
-  `type_name` varchar(100) NOT NULL COMMENT '用户类别名称',
-  `auth_key` varchar(32) NOT NULL,
-  `password_hash` varchar(255) NOT NULL COMMENT '密码',
-  `email` varchar(255) NOT NULL COMMENT '邮箱',
-  `reg_ip` int(11) NOT NULL DEFAULT '0' COMMENT '创建或注册IP',
-  `last_login_time` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '最后登录时间',
-  `last_login_ip` int(11) NOT NULL DEFAULT '0' COMMENT '最后登录IP',
-  `status` tinyint(4) NOT NULL DEFAULT '1' COMMENT '用户状态 1正常 0禁用',
+  `type_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户类别名称',
+  `auth_key` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '密码',
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '邮箱',
+  `reg_ip` int(11) NOT NULL DEFAULT 0 COMMENT '创建或注册IP',
+  `last_login_time` int(11) UNSIGNED NOT NULL DEFAULT 0 COMMENT '最后登录时间',
+  `last_login_ip` int(11) NOT NULL DEFAULT 0 COMMENT '最后登录IP',
+  `status` tinyint(4) NOT NULL DEFAULT 1 COMMENT '用户状态 1正常 0禁用',
   `created_at` int(11) NOT NULL COMMENT '创建或注册时间',
   `updated_at` int(11) NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE KEY `username` (`username`) USING BTREE,
-  UNIQUE KEY `email` (`email`) USING BTREE,
-  KEY `status` (`status`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+  UNIQUE INDEX `username`(`username`) USING BTREE,
+  UNIQUE INDEX `email`(`email`) USING BTREE,
+  INDEX `status`(`status`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_admin
 -- ----------------------------
-BEGIN;
-INSERT INTO `yunmei_admin` VALUES (1, 'admin', 'admin', 0, 'admin', 'SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ', '$2y$13$0UVcG.mXF6Og0rnjfwJd2.wixT2gdn.wDO9rN44jGtIGc6JvBqR7i', '771405950@qq.com', 2130706433, 1541648481, 2130706433, 1, 1482305564, 1541648481);
+INSERT INTO `yunmei_admin` VALUES (1, 'admin', 'admin', 0, 'admin', 'SbSY36BLw3V2lU-GB7ZAzCVJKDFx82IJ', '$2y$13$0UVcG.mXF6Og0rnjfwJd2.wixT2gdn.wDO9rN44jGtIGc6JvBqR7i', '771405950@qq.com', 2130706433, 1544585782, 2130706433, 1, 1482305564, 1544585782);
 INSERT INTO `yunmei_admin` VALUES (24, 'haohao', '包_1540785158_8970', 1, '用户', '1np_dk65kthojBzqfva9Gq8waUrW0vlQ', '$2y$13$ErvwH2ANdbdDAHeqnTiX4ONB01s2jQ.d.V1nu8XObDZ2d4sOkbo1O', '693310424@qq.com', 2130706433, 1540785602, 2130706433, 1, 1540785158, 1540785602);
 INSERT INTO `yunmei_admin` VALUES (25, '苪锦文', '宣_1540785299_32551', 1, '用户', '48Dg9hxroQYIwPzYGg4EWQDLRrMzpuw_', '$2y$13$xq/tlbFeMBKZ3824HHWdie8uNtKOPeAKikKDr0wzPmrETKHjkGMwS', 'bingjinwen@qq.com', 2130706433, 0, 0, 1, 1540785300, 1540785300);
 INSERT INTO `yunmei_admin` VALUES (26, 'ceshi', '鲁_1540975534_11921', 1, '用户', 'WGGMdHwxXiGNguOJ-eqmGkRPxztCPt8x', '$2y$13$Tsn7p0uaQUEqAVcZP3sI6e874EUpYMHVhfN92RQn1B5qSRE0CUfTK', '111221111@qq.com', 2130706433, 0, 0, 1, 1540975535, 1540975535);
 INSERT INTO `yunmei_admin` VALUES (27, '11111', '包_1541067276_48407', 1, '用户', 'nee_Y_dEdYo9IpvIoQ4d6EetFRXcsLp3', '$2y$13$6degfvCA7.PWjRBuq50eluqqnxaWu.X6VCnQK1rM6yciDiYIGptwC', '11111111@qq.com', 2130706433, 0, 0, 1, 1541067277, 1541067277);
 INSERT INTO `yunmei_admin` VALUES (28, 'haohao123', '姬_1541553747_24561', 1, '用户', '1KtZ1zbb5S2ASvUFj8rnpfzIJl94ahIo', '$2y$13$jMFxSNsQPQvZO72moAnEh.UwPNwY6cNFGV1TOsrWID3LT4dLNmIPK', '384903890@qq.com', 2130706433, 1541553854, 2130706433, 1, 1541553748, 1541553854);
-COMMIT;
+INSERT INTO `yunmei_admin` VALUES (29, '111111', '陈_1543914289_35259', 1, '用户', 'hW8SJ3M69UGmonvKhE-waM9pI20r5l0m', '$2y$13$yVztkZP26Sh9oOfVfPZUMehzjM5AFf4x37xDWWDeM4/NVPWr5Vj9u', '13123123@qq.com', 2130706433, 0, 0, 1, 1543914289, 1543914289);
 
 -- ----------------------------
 -- Table structure for yunmei_adtylenum
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_adtylenum`;
-CREATE TABLE `yunmei_adtylenum` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
-  `adtyle_name` varchar(255) NOT NULL COMMENT '广告类型名称',
-  `soft_delete` int(4) unsigned NOT NULL DEFAULT '1' COMMENT '1(显示)2(不显示)',
+CREATE TABLE `yunmei_adtylenum`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `adtyle_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '广告类型名称',
+  `soft_delete` int(4) UNSIGNED NOT NULL DEFAULT 1 COMMENT '1(显示)2(不显示)',
   `adtyle_created_at` int(11) NOT NULL COMMENT '创建时间',
   `adtyle_updated_at` int(11) NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='类型表';
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '类型表' ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_adtylenum
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_adtylenum` VALUES (6, '固定位', 1, 1540867840, 0);
 INSERT INTO `yunmei_adtylenum` VALUES (7, '跳转类型', 1, 1540867866, 1540867884);
 INSERT INTO `yunmei_adtylenum` VALUES (8, '固定位', 1, 1540867971, 0);
 INSERT INTO `yunmei_adtylenum` VALUES (9, '跳转类型', 1, 1540869482, 0);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for yunmei_adver_js
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_adver_js`;
-CREATE TABLE `yunmei_adver_js` (
+CREATE TABLE `yunmei_adver_js`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增id',
   `admin_id` int(11) NOT NULL COMMENT '用户id',
   `enum_id` int(11) NOT NULL COMMENT '广告类型id',
-  `content` varchar(255) NOT NULL COMMENT '需要生成的url或者js',
-  `content_js` varchar(255) NOT NULL COMMENT '生成后的js代码',
+  `content` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '需要生成的url或者js',
+  `content_js` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '生成后的js代码',
   `created_at` int(11) NOT NULL COMMENT '添加时间',
-  `updated_at` int(11) DEFAULT NULL COMMENT '更新时间',
+  `updated_at` int(11) NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE = MyISAM AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of yunmei_adver_js
 -- ----------------------------
-BEGIN;
-INSERT INTO `yunmei_adver_js` VALUES (1, 24, 6, '11111', '11111', 111, 11);
-COMMIT;
+INSERT INTO `yunmei_adver_js` VALUES (4, 24, 6, 'http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190', '<script type=\'text/javascript\'  src = \"http://adcyii.com/statics/themes/admin/adverjs/cjtcl.js\"></script>', 1543915024, 1543915024);
+INSERT INTO `yunmei_adver_js` VALUES (2, 24, 6, 'http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190', '<script type=\'text/javascript\'  src = \"http://adcyii.com/statics/themes/admin/adverjs/ekwtx.js\"></script>', 0, 0);
+INSERT INTO `yunmei_adver_js` VALUES (5, 26, 8, 'http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190', '<script type=\'text/javascript\'  src = \"http://adcyii.com/statics/themes/admin/adverjs/nfwia.js\"></script>', 1543915296, 1543915296);
+INSERT INTO `yunmei_adver_js` VALUES (6, 24, 6, 'http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190', '<script type=\'text/javascript\'  src = \"http://adcyii.com/statics/themes/admin/adverjs/skkkv.js\"></script>', 1543915681, 1543915681);
+INSERT INTO `yunmei_adver_js` VALUES (7, 24, 6, 'http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190', '<script type=\'text/javascript\'  src = \"http://adcyii.com/statics/themes/admin/adverjs/vpnlw.js\"></script>', 1543917047, 1543917047);
+INSERT INTO `yunmei_adver_js` VALUES (8, 24, 6, 'http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190', '<script type=\'text/javascript\'  src = \"http://adcyii.com/statics/themes/admin/adverjs/luuzc.js\"></script>', 1543917117, 1543917117);
+INSERT INTO `yunmei_adver_js` VALUES (9, 24, 6, 'http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190-http://images.hnguangyuan.cn/react.js?id=1190', '<script type=\'text/javascript\'  src = \"http://adcyii.com/statics/themes/admin/adverjs/ttyph.js\"></script>', 1544000586, 1544000586);
 
 -- ----------------------------
 -- Table structure for yunmei_advert_content
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_advert_content`;
-CREATE TABLE `yunmei_advert_content` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
+CREATE TABLE `yunmei_advert_content`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自增id',
   `admin_id` int(11) NOT NULL COMMENT '用户id',
   `enum_id` int(11) NOT NULL COMMENT '广告类型id',
-  `content_js` varchar(255) NOT NULL COMMENT '生成的js文件',
-  `content_image` varchar(255) NOT NULL COMMENT '图片地址',
-  `content_url` varchar(255) NOT NULL COMMENT '地址路径',
+  `content_js` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '生成的js文件',
+  `content_image` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '图片地址',
+  `content_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '地址路径',
   `content_created_at` int(11) NOT NULL COMMENT '添加时间',
   `content_updated_at` int(11) NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='广告表';
+) ENGINE = InnoDB AUTO_INCREMENT = 228 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '广告表' ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_advert_content
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_advert_content` VALUES (225, 24, 9, '', '', '111112222', 1541140281, 0);
 INSERT INTO `yunmei_advert_content` VALUES (226, 25, 6, '', '/statics/themes/admin/uploads/images/20181102/20181102072814_79211.jpg', '22222', 1541140281, 0);
 INSERT INTO `yunmei_advert_content` VALUES (227, 26, 8, '', '/statics/themes/admin/uploads/images/20181102/20181102073924_87415.jpg', '333335', 1541140281, 0);
-COMMIT;
+
+-- ----------------------------
+-- Table structure for yunmei_android
+-- ----------------------------
+DROP TABLE IF EXISTS `yunmei_android`;
+CREATE TABLE `yunmei_android`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自增id',
+  `number` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '机器型号',
+  `status` varchar(100) CHARACTER SET utf8 COLLATE utf8_estonian_ci NOT NULL COMMENT '状态',
+  `canclickad` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' COMMENT '0不可点击1可点击',
+  `created_at` int(11) NOT NULL COMMENT '添加时间',
+  `updated_at` int(11) NOT NULL COMMENT '重启最新时间',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 16 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of yunmei_android
+-- ----------------------------
+INSERT INTO `yunmei_android` VALUES (1, '12312', '0', '1奥术大师', 0, 0);
+INSERT INTO `yunmei_android` VALUES (2, 'qeqweq', '1111', '1', 1544509013, 1544509013);
+INSERT INTO `yunmei_android` VALUES (3, '12312312', '1', '0', 1544510213, 1544510213);
+INSERT INTO `yunmei_android` VALUES (4, '安傻打死打死', '1', '0', 1544510521, 1544510521);
+INSERT INTO `yunmei_android` VALUES (5, '格力', '1', '0', 1544517254, 1544519577);
+INSERT INTO `yunmei_android` VALUES (6, '格力2', '1', '0', 1544517623, 1544519610);
+INSERT INTO `yunmei_android` VALUES (10, '格力222222222', '1', '0', 1544579947, 0);
+INSERT INTO `yunmei_android` VALUES (11, '格力2222233333', '1', '0', 1544580110, 1544580459);
+INSERT INTO `yunmei_android` VALUES (12, '格力2qweqwe', '1', '0', 1544581176, 1544582511);
+INSERT INTO `yunmei_android` VALUES (13, '格ppppp', '1', '0', 1544582541, 0);
+INSERT INTO `yunmei_android` VALUES (14, '格pp7777', '1', '0', 1544582560, 0);
+INSERT INTO `yunmei_android` VALUES (15, '格pp77771111', '1', '0', 1544583802, 0);
 
 -- ----------------------------
 -- Table structure for yunmei_auth_assignment
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_auth_assignment`;
-CREATE TABLE `yunmei_auth_assignment` (
-  `item_name` varchar(64) NOT NULL,
-  `user_id` varchar(64) NOT NULL,
-  `created_at` int(11) DEFAULT NULL,
-  PRIMARY KEY (`item_name`,`user_id`) USING BTREE,
+CREATE TABLE `yunmei_auth_assignment`  (
+  `item_name` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `created_at` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`item_name`, `user_id`) USING BTREE,
   CONSTRAINT `yunmei_auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `yunmei_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_auth_assignment
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_auth_assignment` VALUES ('1111', '28', 1541553759);
 INSERT INTO `yunmei_auth_assignment` VALUES ('administors', '1', 1484712737);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for yunmei_auth_item
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_auth_item`;
-CREATE TABLE `yunmei_auth_item` (
-  `name` varchar(64) NOT NULL,
+CREATE TABLE `yunmei_auth_item`  (
+  `name` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `type` int(11) NOT NULL,
-  `description` text,
-  `rule_name` varchar(64) DEFAULT NULL,
-  `data` text,
-  `created_at` int(11) DEFAULT NULL,
-  `updated_at` int(11) DEFAULT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  `rule_name` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `data` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  `created_at` int(11) NULL DEFAULT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`name`) USING BTREE,
-  KEY `rule_name` (`rule_name`) USING BTREE,
-  KEY `type` (`type`) USING BTREE,
+  INDEX `rule_name`(`rule_name`) USING BTREE,
+  INDEX `type`(`type`) USING BTREE,
   CONSTRAINT `yunmei_auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `yunmei_auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_auth_item
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_auth_item` VALUES ('1111', 1, '11', NULL, NULL, 1541411725, 1541411725);
 INSERT INTO `yunmei_auth_item` VALUES ('admin/auth', 2, '', 'admin/auth', NULL, 1484734191, 1541553827);
 INSERT INTO `yunmei_auth_item` VALUES ('admin/create', 2, '', 'admin/create', NULL, 1484734191, 1541553827);
@@ -189,25 +215,23 @@ INSERT INTO `yunmei_auth_item` VALUES ('role/delete', 2, '', 'role/delete', NULL
 INSERT INTO `yunmei_auth_item` VALUES ('role/index', 2, '', 'role/index', NULL, 1484734191, 1541553827);
 INSERT INTO `yunmei_auth_item` VALUES ('role/update', 2, '', 'role/update', NULL, 1484734191, 1541553828);
 INSERT INTO `yunmei_auth_item` VALUES ('syslog/index', 2, '', 'syslog/index', NULL, 1541553795, 1541553825);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for yunmei_auth_item_child
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_auth_item_child`;
-CREATE TABLE `yunmei_auth_item_child` (
-  `parent` varchar(64) NOT NULL,
-  `child` varchar(64) NOT NULL,
-  PRIMARY KEY (`parent`,`child`) USING BTREE,
-  KEY `child` (`child`) USING BTREE,
+CREATE TABLE `yunmei_auth_item_child`  (
+  `parent` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `child` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  PRIMARY KEY (`parent`, `child`) USING BTREE,
+  INDEX `child`(`child`) USING BTREE,
   CONSTRAINT `yunmei_auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `yunmei_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `yunmei_auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `yunmei_auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_auth_item_child
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_auth_item_child` VALUES ('1111', 'admin/auth');
 INSERT INTO `yunmei_auth_item_child` VALUES ('administors', 'admin/auth');
 INSERT INTO `yunmei_auth_item_child` VALUES ('1111', 'admin/create');
@@ -246,24 +270,22 @@ INSERT INTO `yunmei_auth_item_child` VALUES ('administors', 'role/index');
 INSERT INTO `yunmei_auth_item_child` VALUES ('1111', 'role/update');
 INSERT INTO `yunmei_auth_item_child` VALUES ('administors', 'role/update');
 INSERT INTO `yunmei_auth_item_child` VALUES ('1111', 'syslog/index');
-COMMIT;
 
 -- ----------------------------
 -- Table structure for yunmei_auth_rule
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_auth_rule`;
-CREATE TABLE `yunmei_auth_rule` (
-  `name` varchar(64) NOT NULL,
-  `data` text,
-  `created_at` int(11) DEFAULT NULL,
-  `updated_at` int(11) DEFAULT NULL,
+CREATE TABLE `yunmei_auth_rule`  (
+  `name` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `data` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  `created_at` int(11) NULL DEFAULT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`name`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_auth_rule
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_auth_rule` VALUES ('', 'O:23:\"backend\\models\\AuthRule\":4:{s:4:\"name\";s:0:\"\";s:30:\"\0backend\\models\\AuthRule\0_rule\";r:1;s:9:\"createdAt\";i:1484734191;s:9:\"updatedAt\";i:1541553796;}', 1484734191, 1541553796);
 INSERT INTO `yunmei_auth_rule` VALUES ('admin/auth', 'O:23:\"backend\\models\\AuthRule\":4:{s:4:\"name\";s:10:\"admin/auth\";s:30:\"\0backend\\models\\AuthRule\0_rule\";r:1;s:9:\"createdAt\";i:1484734191;s:9:\"updatedAt\";i:1541553827;}', 1484734191, 1541553827);
 INSERT INTO `yunmei_auth_rule` VALUES ('admin/create', 'O:23:\"backend\\models\\AuthRule\":4:{s:4:\"name\";s:12:\"admin/create\";s:30:\"\0backend\\models\\AuthRule\0_rule\";r:1;s:9:\"createdAt\";i:1484734191;s:9:\"updatedAt\";i:1541553827;}', 1484734191, 1541553827);
@@ -286,49 +308,45 @@ INSERT INTO `yunmei_auth_rule` VALUES ('role/delete', 'O:23:\"backend\\models\\A
 INSERT INTO `yunmei_auth_rule` VALUES ('role/index', 'O:23:\"backend\\models\\AuthRule\":4:{s:4:\"name\";s:10:\"role/index\";s:30:\"\0backend\\models\\AuthRule\0_rule\";r:1;s:9:\"createdAt\";i:1484734191;s:9:\"updatedAt\";i:1541553827;}', 1484734191, 1541553827);
 INSERT INTO `yunmei_auth_rule` VALUES ('role/update', 'O:23:\"backend\\models\\AuthRule\":4:{s:4:\"name\";s:11:\"role/update\";s:30:\"\0backend\\models\\AuthRule\0_rule\";r:1;s:9:\"createdAt\";i:1484734191;s:9:\"updatedAt\";i:1541553828;}', 1484734191, 1541553828);
 INSERT INTO `yunmei_auth_rule` VALUES ('syslog/index', 'O:23:\"backend\\models\\AuthRule\":4:{s:4:\"name\";s:12:\"syslog/index\";s:30:\"\0backend\\models\\AuthRule\0_rule\";r:1;s:9:\"createdAt\";i:1541553795;s:9:\"updatedAt\";i:1541553825;}', 1541553795, 1541553825);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for yunmei_config
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_config`;
-CREATE TABLE `yunmei_config` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `keyid` varchar(20) NOT NULL DEFAULT '',
-  `title` varchar(100) NOT NULL DEFAULT '',
-  `data` text NOT NULL,
+CREATE TABLE `yunmei_config`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `keyid` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
+  `title` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
+  `data` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
-  KEY `keyid` (`keyid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+  INDEX `keyid`(`keyid`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_config
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_config` VALUES (1, 'basic', '', '{\"sitename\":\"Yii2 CMS\",\"url\":\"http:\\/\\/www.test-yii2cms.com\",\"logo\":\"\\/statics\\/themes\\/admin\\/images\\/logo.png\",\"seo_keywords\":\"Yii2,CMS\",\"seo_description\":\"Yii2,CMS\",\"copyright\":\"@Yii2 CMS\",\"statcode\":\"\",\"close\":\"0\",\"close_reason\":\"\\u7ad9\\u70b9\\u5347\\u7ea7\\u4e2d, \\u8bf7\\u7a0d\\u540e\\u8bbf\\u95ee!\"}');
 INSERT INTO `yunmei_config` VALUES (2, 'sendmail', '', '{\"mail_type\":\"0\",\"smtp_server\":\"smtp.qq.com\",\"smtp_port\":\"25\",\"auth\":\"1\",\"openssl\":\"1\",\"smtp_user\":\"771405950\",\"smtp_pwd\":\"qiaoBo1989122\",\"send_email\":\"771405950@qq.com\",\"nickname\":\"\\u8fb9\\u8d70\\u8fb9\\u4e54\",\"sign\":\"<hr \\/>\\r\\n\\u90ae\\u4ef6\\u7b7e\\u540d\\uff1a\\u6b22\\u8fce\\u8bbf\\u95ee <a href=\\\"http:\\/\\/www.test-yii2cms.com\\\" target=\\\"_blank\\\">Yii2 CMS<\\/a>\"}');
 INSERT INTO `yunmei_config` VALUES (3, 'attachment', '', '{\"attachment_size\":\"2048\",\"attachment_suffix\":\"jpg|jpeg|gif|bmp|png\",\"watermark_enable\":\"1\",\"watermark_pos\":\"0\",\"watermark_text\":\"Yii2 CMS\"}');
-COMMIT;
 
 -- ----------------------------
 -- Table structure for yunmei_menu
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_menu`;
-CREATE TABLE `yunmei_menu` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `pid` int(10) unsigned NOT NULL DEFAULT '0',
-  `name` varchar(50) NOT NULL DEFAULT '',
-  `url` varchar(60) NOT NULL DEFAULT '',
-  `icon_style` varchar(50) NOT NULL DEFAULT '',
-  `display` tinyint(3) unsigned NOT NULL DEFAULT '1',
-  `sort` smallint(5) unsigned NOT NULL DEFAULT '0',
+CREATE TABLE `yunmei_menu`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `pid` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
+  `url` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
+  `icon_style` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '',
+  `display` tinyint(3) UNSIGNED NOT NULL DEFAULT 1,
+  `sort` smallint(5) UNSIGNED NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 41 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_menu
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_menu` VALUES (1, 0, '我的面板', 'index/index', 'fa-home', 1, 0);
 INSERT INTO `yunmei_menu` VALUES (2, 0, '站点设置', 'config/basic', 'fa-cogs', 1, 0);
 INSERT INTO `yunmei_menu` VALUES (3, 0, '管理员设置', 'admin/index', 'fa-user', 1, 0);
@@ -368,94 +386,110 @@ INSERT INTO `yunmei_menu` VALUES (36, 34, '广告内容', 'advertcontent/index',
 INSERT INTO `yunmei_menu` VALUES (37, 1, '系统日志', 'syslog/index', 'fa-home', 1, 0);
 INSERT INTO `yunmei_menu` VALUES (38, 34, '统计广告数据', 'statistics/index', 'fa-home', 1, 0);
 INSERT INTO `yunmei_menu` VALUES (39, 34, '广告生成js', 'adverjs/index', 'fa-home', 1, 0);
-COMMIT;
+INSERT INTO `yunmei_menu` VALUES (40, 34, 'android内容', 'android/index', 'fa-home', 1, 1);
 
 -- ----------------------------
 -- Table structure for yunmei_migration
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_migration`;
-CREATE TABLE `yunmei_migration` (
-  `version` varchar(180) NOT NULL,
-  `apply_time` int(11) DEFAULT NULL,
+CREATE TABLE `yunmei_migration`  (
+  `version` varchar(180) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `apply_time` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`version`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_migration
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_migration` VALUES ('m000000_000000_base', 1482231528);
 INSERT INTO `yunmei_migration` VALUES ('m130524_201442_init', 1482231534);
-COMMIT;
 
 -- ----------------------------
 -- Table structure for yunmei_session
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_session`;
-CREATE TABLE `yunmei_session` (
-  `id` char(40) NOT NULL,
-  `expire` int(11) DEFAULT NULL,
-  `data` blob,
+CREATE TABLE `yunmei_session`  (
+  `id` char(40) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `expire` int(11) NULL DEFAULT NULL,
+  `data` blob NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of yunmei_session
 -- ----------------------------
-BEGIN;
-INSERT INTO `yunmei_session` VALUES ('387tv40j064sfrhltd14mtian7', 1541577135, 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A31303A222F61646D696E2E706870223B5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('40prpu5to9i9kshcgpjpm63h27', 1541583396, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('5f05bt1dbt9mkqor4r2kalr715', 1541586803, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('69u1hr9fvkm80q9osemaghfrj0', 1541582932, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('7qs4otc2h7rbl1u6m1u71o3sv3', 1541496905, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('8n1rcl1horhv3dpaptjr0ct4a4', 1541586796, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('94f8v9nih2qno70dq6o4eman45', 1541759310, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('c07av5b8sr0bscp3qg6qm0ta63', 1541412244, 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A32353A222F61646D696E2E7068703F723D726F6C65253246696E646578223B5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('d29m812mssmn9r2eojq6mp33m7', 1541411923, 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A31303A222F61646D696E2E706870223B5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('f3pl5aiptai9dgp7vgqi3b8372', 1541583709, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('g3sv7523jugal8eeu0755gv5o4', 1541665100, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('jossmfgpqe78oc0vs158c5c887', 1541413305, 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A32353A222F61646D696E2E7068703F723D726F6C65253246696E646578223B5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('kha3bmfirg015j2lcrb75162a0', 1541646451, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('mp1d8h022unqpcjbcsolgcmra6', 1541576451, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
-INSERT INTO `yunmei_session` VALUES ('na6e8o28mooh9djaovr0e5rpha', 1542682728, 0x5F5F666C6173687C613A303A7B7D5F5F69647C693A313B);
-COMMIT;
+INSERT INTO `yunmei_session` VALUES ('9uet703cvec3df0s5n62dhbrt1', 1544515166, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
+INSERT INTO `yunmei_session` VALUES ('fq6elrq3eu038cdfa93tpsbu7d', 1544002029, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
+INSERT INTO `yunmei_session` VALUES ('jlec58nqfofr36vtkdcbiepa05', 1544175339, 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A31303A222F61646D696E2E706870223B5F5F69647C733A313A2231223B);
+INSERT INTO `yunmei_session` VALUES ('o80aem3b3f1kvkf38tiq659jnh', 1543992839, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
+INSERT INTO `yunmei_session` VALUES ('qvgerj9kat9p0ummmd8m9uet19', 1543995349, 0x5F5F666C6173687C613A303A7B7D5F5F72657475726E55726C7C733A32363A222F61646D696E2E7068703F723D61646D696E253246696E646578223B);
+INSERT INTO `yunmei_session` VALUES ('t5btvifra0gdsa6elrc5l8823p', 1544599801, 0x5F5F666C6173687C613A303A7B7D5F5F69647C733A313A2231223B);
 
 -- ----------------------------
 -- Table structure for yunmei_statistics
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_statistics`;
-CREATE TABLE `yunmei_statistics` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增id',
+CREATE TABLE `yunmei_statistics`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自增id',
   `admin_id` int(11) NOT NULL COMMENT '用户id',
-  `admin_name` varchar(255) NOT NULL COMMENT '用户名称',
-  `ip` varchar(100) NOT NULL COMMENT '用户ip',
+  `admin_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户名称',
+  `ip` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '用户ip',
   `created_at` int(11) NOT NULL COMMENT '添加时间',
-  `phone_model` varchar(255) NOT NULL COMMENT '手机型号',
-  `phone_size` varchar(255) NOT NULL COMMENT '手机尺寸',
+  `phone_model` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '手机型号',
+  `phone_size` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '手机尺寸',
+  `phone_pc` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '是pc还是phone',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 26 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of yunmei_statistics
+-- ----------------------------
+INSERT INTO `yunmei_statistics` VALUES (1, 24, '6', '180.109.34.152', 1543917783, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (2, 24, '6', '180.109.34.152', 1543917783, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (3, 24, '6', '180.109.34.152', 1543917782, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (4, 24, '6', '180.109.34.152', 1543917782, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (5, 24, '6', '180.109.34.152', 1543917781, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (6, 24, '6', '180.109.34.152', 1543917781, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (7, 24, '6', '180.109.34.152', 1543917780, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (8, 24, '6', '180.109.34.152', 1543917779, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (9, 24, '6', '180.109.34.152', 1543917778, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (10, 24, '6', '180.109.34.152', 1543917778, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (11, 24, '6', '180.109.34.152', 1543919240, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (12, 24, '6', '180.109.34.152', 1543919240, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (13, 24, '6', '180.109.34.152', 1543919240, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (14, 24, '6', '180.109.34.152', 1543919239, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (15, 24, '6', '180.109.34.152', 1543919239, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (16, 24, '6', '180.109.34.152', 1543919239, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (17, 24, '6', '180.109.34.152', 1543919239, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (18, 24, '6', '180.109.34.152', 1543919238, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (19, 24, '6', '180.109.34.152', 1543919238, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (20, 24, '6', '180.109.34.152', 1543919238, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (21, 24, '6', '180.109.34.152', 1543919238, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (22, 24, '6', '180.109.34.152', 1543919238, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (23, 24, '6', '180.109.34.152', 1543919237, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (24, 24, '6', '180.109.34.152', 1543919237, 'null', '1080X1920', 'pc');
+INSERT INTO `yunmei_statistics` VALUES (25, 24, '6', '180.109.34.152', 1543919237, 'null', '1080X1920', 'pc');
 
 -- ----------------------------
 -- Table structure for yunmei_syslog
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_syslog`;
-CREATE TABLE `yunmei_syslog` (
+CREATE TABLE `yunmei_syslog`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '自增id',
   `uid` int(11) NOT NULL COMMENT '用户id',
-  `username` varchar(250) NOT NULL COMMENT '名称',
-  `controller` varchar(250) NOT NULL COMMENT '控制器',
-  `models` varchar(250) NOT NULL COMMENT '模块',
-  `action` varchar(250) NOT NULL COMMENT '方法',
+  `username` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '名称',
+  `controller` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '控制器',
+  `models` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '模块',
+  `action` varchar(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '方法',
   `create_at` int(11) NOT NULL COMMENT '添加时间',
-  `ip` char(20) NOT NULL COMMENT 'ip',
-  `modulee` varchar(100) NOT NULL COMMENT '模块名称',
+  `ip` char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'ip',
+  `modulee` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '模块名称',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=270 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE = MyISAM AUTO_INCREMENT = 330 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of yunmei_syslog
 -- ----------------------------
-BEGIN;
 INSERT INTO `yunmei_syslog` VALUES (41, 1, 'admin', '', '系统日志', '访问了日志列表', 1541410114, '127.0.0.1', 'app-backend');
 INSERT INTO `yunmei_syslog` VALUES (40, 1, 'admin', '', '角色管理', '访问角色管理', 1541409963, '127.0.0.1', 'app-backend');
 INSERT INTO `yunmei_syslog` VALUES (39, 1, 'admin', '', '角色管理', '更新角色:administors', 1541409892, '127.0.0.1', 'app-backend');
@@ -702,26 +736,85 @@ INSERT INTO `yunmei_syslog` VALUES (266, 1, 'admin', '', '角色管理', '访问
 INSERT INTO `yunmei_syslog` VALUES (267, 1, 'admin', '', '角色管理', '访问角色管理', 1542681285, '127.0.0.1', 'app-backend');
 INSERT INTO `yunmei_syslog` VALUES (268, 1, 'admin', '', '角色管理', '访问角色管理', 1542681287, '127.0.0.1', 'app-backend');
 INSERT INTO `yunmei_syslog` VALUES (269, 1, 'admin', '', '角色管理', '访问角色管理', 1542681288, '127.0.0.1', 'app-backend');
-COMMIT;
+INSERT INTO `yunmei_syslog` VALUES (270, 1, 'admin', '', '系统日志', '访问了系统日志列表', 1543284439, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (271, 1, 'admin', '', '广告内容', '访问广告内容', 1543306334, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (272, 1, 'admin', '', '广告内容', '访问广告内容', 1543367455, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (273, 1, 'admin', '', '广告内容', '访问广告内容', 1543387125, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (274, 1, 'admin', '', '广告内容', '添加广告', 1543387129, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (275, 1, 'admin', '', '系统日志', '访问了系统日志列表', 1543454989, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (276, 1, 'admin', '', '系统日志', '访问了系统日志列表', 1543910886, '192.168.83.6', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (277, 1, 'admin', '', '系统日志', '访问了系统日志列表', 1543910887, '192.168.83.6', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (278, 1, 'admin', '', '管理员管理', '访问管理员', 1543913723, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (279, 1, 'admin', '', '管理员管理', '添加管理员', 1543913742, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (280, 1, 'admin', '', '管理员管理', '添加管理员', 1543914280, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (281, 1, 'admin', '', '管理员管理', '添加管理员', 1543914289, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (282, 1, 'admin', '', '管理员管理', '访问管理员', 1543914290, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (283, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1543974599, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (284, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1543974614, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (285, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1543974619, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (286, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1543974648, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (287, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1543974878, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (288, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1543975349, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (289, 1, 'admin', '', '管理员管理', '访问管理员', 1543975354, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (290, 1, 'admin', '', '管理员管理', '访问管理员', 1543975458, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (291, 1, 'admin', '', '管理员管理', '访问管理员', 1543975465, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (292, 1, 'admin', '', '管理员管理', '访问管理员', 1543975472, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (293, 1, 'admin', '', '管理员管理', '访问管理员', 1543976688, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (294, 1, 'admin', '', '角色管理', '访问角色管理', 1543976719, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (295, 1, 'admin', '', '角色管理', '访问角色管理', 1543976723, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (296, 1, 'admin', '', '角色管理', '访问角色管理', 1543977097, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (297, 1, 'admin', '', '角色管理', '访问角色管理', 1543977124, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (298, 1, 'admin', '', '管理员管理', '访问管理员', 1543977256, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (299, 1, 'admin', '', '管理员管理', '访问管理员', 1543977462, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (300, 1, 'admin', '', '管理员管理', '访问管理员', 1543977466, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (301, 1, 'admin', '', '管理员管理', '访问管理员', 1543977526, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (302, 1, 'admin', '', '管理员管理', '访问管理员', 1543977619, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (303, 1, 'admin', '', '管理员管理', '访问管理员', 1543978062, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (304, 1, 'admin', '', '管理员管理', '访问管理员', 1543978066, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (305, 1, 'admin', '', '管理员管理', '访问管理员', 1543978087, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (306, 1, 'admin', '', '管理员管理', '访问管理员', 1543978090, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (307, 1, 'admin', '', '管理员管理', '访问管理员', 1543979077, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (308, 1, 'admin', '', '管理员管理', '访问管理员', 1543979099, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (309, 1, 'admin', '', '管理员管理', '访问管理员', 1543979105, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (310, 1, 'admin', '', '管理员管理', '访问管理员', 1543979122, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (311, 1, 'admin', '', '管理员管理', '访问管理员', 1543981747, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (312, 1, 'admin', '', '管理员管理', '访问管理员', 1543991397, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (313, 1, 'admin', '', '广告内容', '访问广告内容', 1544172987, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (314, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1544509200, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (315, 1, 'admin', '', '后台菜单管理', '添加菜单', 1544509207, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (316, 1, 'admin', '', '后台菜单管理', '添加菜单', 1544509251, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (317, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1544509252, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (318, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1544509256, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (319, 1, 'admin', '', '系统日志', '访问了系统日志列表', 1544585787, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (320, 1, 'admin', '', '系统日志', '访问了系统日志列表', 1544586117, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (321, 1, 'admin', '', '系统日志', '访问了系统日志列表', 1544586895, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (322, 1, 'admin', '', '广告内容', '访问广告内容', 1544593598, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (323, 1, 'admin', '', '广告内容', '添加广告', 1544593601, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (324, 1, 'admin', '', '广告类型', '访问广告类型', 1544593616, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (325, 1, 'admin', '', '广告类型', '添加广告类型', 1544593618, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (326, 1, 'admin', '', '后台菜单管理', '访问菜单管理', 1544597930, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (327, 1, 'admin', '', '后台菜单管理', '菜单排序', 1544597937, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (328, 1, 'admin', '', '后台菜单管理', '菜单排序', 1544597945, '127.0.0.1', 'app-backend');
+INSERT INTO `yunmei_syslog` VALUES (329, 1, 'admin', '', '后台菜单管理', '菜单排序', 1544597981, '127.0.0.1', 'app-backend');
 
 -- ----------------------------
 -- Table structure for yunmei_user
 -- ----------------------------
 DROP TABLE IF EXISTS `yunmei_user`;
-CREATE TABLE `yunmei_user` (
+CREATE TABLE `yunmei_user`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `auth_key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
-  `password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `password_reset_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `status` smallint(6) NOT NULL DEFAULT '10',
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT 10,
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE KEY `username` (`username`) USING BTREE,
-  UNIQUE KEY `email` (`email`) USING BTREE,
-  UNIQUE KEY `password_reset_token` (`password_reset_token`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
+  UNIQUE INDEX `username`(`username`) USING BTREE,
+  UNIQUE INDEX `email`(`email`) USING BTREE,
+  UNIQUE INDEX `password_reset_token`(`password_reset_token`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
 SET FOREIGN_KEY_CHECKS = 1;
