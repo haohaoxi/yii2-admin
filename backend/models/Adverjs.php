@@ -79,6 +79,12 @@ class Adverjs extends \yii\db\ActiveRecord
         scriptr.type = 'text/javascript'
         document.getElementsByTagName('head')[0].appendChild(scriptr);
         
+        let scriptrp = document.createElement('script');
+        scriptrp.src = 'http://pv.sohu.com/cityjson?ie=utf-8';
+        scriptrp.id = 'adverrp'
+        scriptrp.type = 'text/javascript'
+        document.getElementsByTagName('head')[0].appendChild(scriptrp);
+        
         window.onload = function(){
         function browserRedirect() {
         var sUserAgent = navigator.userAgent.toLowerCase();
