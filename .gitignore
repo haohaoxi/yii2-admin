@@ -14,7 +14,7 @@ composer.phar
 storage/app.log
 storage/index.data
 storage/runtime/debug/
-storage/runtime/debug/assets
-storage/runtime/debug/logs
+storage/assets/
+storage/runtime/logs/
 /.dea/
 
