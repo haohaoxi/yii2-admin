@@ -127,10 +127,10 @@ class AndroidController extends baseController
 
     public function actionStatus($list){
         if(isset($list)){
-         $listarr =    explode(",",substr($list,0,strlen($list)-1));
-         foreach ($listarr as $key=>$value){
-             Android::updateAll(['status' => 0], ['id'=> $value]);
-         }
+            $listarr =    explode(",",substr($list,0,strlen($list)-1));
+            foreach ($listarr as $key=>$value){
+                Android::updateAll(['status' => 0], ['id'=> $value]);
+            }
             Yii::$app->session->setFlash('success', '操作成功');
         }
     }

@@ -4,6 +4,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\search\AdvertcontentSearch */
@@ -33,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'headerOptions' => ['width' => '106'],
                 'format'=>['raw'],
                 'value'=>function($model){
-                return Html::img(Yii::$app->request->hostInfo.$model->content_image,['width'=>106,'height'=>36]);
+                return Html::img(Url::base().$model->content_image,['width'=>106,'height'=>36]);
                 }
             ],
             'content_url:url',
