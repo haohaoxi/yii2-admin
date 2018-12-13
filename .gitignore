@@ -13,7 +13,7 @@ composer.phar
 .DS_Store
 
 storage/runtime/debug
-storage/assets
+storage/assets/
 storage/runtime/logs
 /.dea/
 
