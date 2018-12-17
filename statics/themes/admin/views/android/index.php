@@ -39,14 +39,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ],
 
-            [
-                'attribute' => 'canclickad',
-                'format' => 'raw',
-                'label' => '状态2',
-                'value' => function($data) {
-                    return Html::tag('span', Android::getCanclickadText($data['canclickad']), ['class' => 'label label-sm '.Android::getCanclickadType($data['canclickad'])]);
-                }
-            ],
+//            [
+//                'attribute' => 'canclickad',
+//                'format' => 'raw',
+//                'label' => '状态2',
+//                'value' => function($data) {
+//                    return Html::tag('span', Android::getCanclickadText($data['canclickad']), ['class' => 'label label-sm '.Android::getCanclickadType($data['canclickad'])]);
+//                }
+//            ],
 
             [
                 'class' => 'common\grid\ActionColumn',
@@ -55,8 +55,9 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
     <div class="form-group">
-        <?= Html::button('更新状态1', ['class' => 'btn btn-success','id'=>'but']) ?>
-        <?= Html::button('更新状态2', ['class' => 'btn btn-success','id'=>'buts']) ?>
+        <?= Html::button('状态', ['class' => 'btn btn-success','id'=>'but']) ?>
+        <?= Html::button('状态1', ['class' => 'btn btn-success','id'=>'buts']) ?>
+        <?= Html::button('批量删除', ['class' => 'btn btn-success','id'=>'dele']) ?>
     </div>
 </div>
 <script type="text/javascript">
@@ -90,6 +91,35 @@ $this->params['breadcrumbs'][] = $this->title;
         })
 
         $("#buts").click(function(){
+            var len = $("input:checkbox[name='selection[]']:checked").length;
+            if(len==0){
+                alert("请至少选择一个");
+                return false;
+            }
+            var list = "";
+            $("input:checkbox[name='selection[]']:checked").each(function(){
+                list += $(this).val()+',';
+            });
+            if(list.length>0){
+                $.ajax({
+                    type:'GET',
+                    url:"<?=  Url::to(['android/status1']); ?>",
+                    data:{list:list},
+                    dataType:'',
+                    success:function(data){
+                        window.location.reload()
+                    },
+                    error:function(jqXHR,textStatus,errorThrown){
+                        alert("请求失败");
+                    }
+                })
+            }else{
+                alert("内容不能为空");
+            }
+        })
+
+
+        $("#dele").click(function(){
             var len = $("input:checkbox[name='selection[]']:checked").length;
             if(len==0){
                 alert("请至少选择一个");

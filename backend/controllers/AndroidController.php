@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * AndroidController implements the CRUD actions for Android model.
  */
-class AndroidController extends baseController
+class AndroidController extends BaseController
 {
     /**
      * {@inheritdoc}
@@ -135,11 +135,21 @@ class AndroidController extends baseController
         }
     }
 
+    public function actionStatus1($list){
+        if(isset($list)){
+            $listarr =    explode(",",substr($list,0,strlen($list)-1));
+            foreach ($listarr as $key=>$value){
+                Android::updateAll(['status' => 1], ['id'=> $value]);
+            }
+            Yii::$app->session->setFlash('success', '操作成功');
+        }
+    }
+
     public function actionCanclik($list){
         if(isset($list)){
             $listarr =    explode(",",substr($list,0,strlen($list)-1));
             foreach ($listarr as $key=>$value){
-                Android::updateAll(['canclickad' => 0], ['id'=> $value]);
+                Android::deleteAll(['id' => $value]);
             }
             Yii::$app->session->setFlash('success', '操作成功');
         }
