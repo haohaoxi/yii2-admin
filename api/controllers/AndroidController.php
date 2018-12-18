@@ -28,7 +28,7 @@ class AndroidController extends  ActiveController
      */
     public function  actionEquipment()
     {
-        if(Yii::$app->request->isGet){
+        if(Yii::$app->request->get()){
             $connection = \Yii::$app->db;
             $list = $_REQUEST;
             if($list['number']){
@@ -65,10 +65,10 @@ class AndroidController extends  ActiveController
     }
 
     public function actionNumberlist(){
-        if(Yii::$app->request->isGet){
+        if(Yii::$app->request->get()){
             $connection = \Yii::$app->db;
             $list = $_REQUEST;
-            if(isset($list['number'])){
+            if($list['number']){
                 $time = time();
                 $content  = $connection->createCommand("select * from yunmei_android where number = '{$list['number']}'")->queryOne();
                if($content==false){
