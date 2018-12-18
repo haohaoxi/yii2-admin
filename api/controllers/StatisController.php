@@ -77,6 +77,7 @@ class StatisController extends  ActiveController
         var_dump($vals);
         $content = substr($vals,0,-1);
         $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size,phone_pc) values $content";
+        
 //        echo $sql;
         $content  = $connection->createCommand("$sql")->execute();
 //        $endtiem = microtime(true);
