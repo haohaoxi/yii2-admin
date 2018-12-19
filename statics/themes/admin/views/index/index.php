@@ -1,4 +1,5 @@
 <?php
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 
@@ -12,14 +13,14 @@ Yii::$app->db->open();
         <div class="panel-body">
         <table class="table table-bordered table-hover">
             <tbody>
-            <tr>
-                <td>QQ交流群</td>
-                <td>608230907</td>
-            </tr>
-            <tr>
-                <td>下载地址</td>
-                <td><a href="https://github.com/qiaohongbo/yii2-admin">点击下载</a></td>
-            </tr>
+<!--            <tr>-->
+<!--                <td>QQ交流群</td>-->
+<!--                <td>608230907</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>下载地址</td>-->
+<!--                <td><a href="https://github.com/qiaohongbo/yii2-admin">点击下载</a></td>-->
+<!--            </tr>-->
             <tr>
                 <td>Yii版本</td>
                 <td><?=Yii::getVersion();?></td>
@@ -56,32 +57,32 @@ Yii::$app->db->open();
             </tbody>
         </table>
         </div>
-        <div class="panel-heading">开发团队</div>
-        <div class="panel-body">
-        <table class="table table-bordered table-hover">
-            <tbody>
-                <tr>
-                    <td>版权所有</td>
-                    <td>边走边乔</td>
-                </tr>
-                <tr>
-                    <td>负责人</td>
-                    <td>边走边乔</td>
-                </tr>
-                <tr>
-                    <td>GitHub</td>
-                    <td><a href="https://github.com/qiaohongbo/yii2-admin">GitHub</a></td>
-                </tr>
-                <tr>
-                    <td>联系QQ</td>
-                    <td>771405950 (边走边乔)</td>
-                </tr>
-                <tr>
-                    <td>捐赠</td>
-                    <td>如果您使用本系统而受益或者感到愉悦, 您可以扫码支付帮助它成长~ <img src="/statics/themes/admin/images/qrcode.png" alt=""></td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
+<!--        <div class="panel-heading">开发团队</div>-->
+<!--        <div class="panel-body">-->
+<!--        <table class="table table-bordered table-hover">-->
+<!--            <tbody>-->
+<!--                <tr>-->
+<!--                    <td>版权所有</td>-->
+<!--                    <td>边走边乔</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>负责人</td>-->
+<!--                    <td>边走边乔</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>GitHub</td>-->
+<!--                    <td><a href="https://github.com/qiaohongbo/yii2-admin">GitHub</a></td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>联系QQ</td>-->
+<!--                    <td>771405950 (边走边乔)</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>捐赠</td>-->
+<!--                    <td>如果您使用本系统而受益或者感到愉悦, 您可以扫码支付帮助它成长~ <img src="--><?//=Url::base();?><!--/statics/themes/admin/images/qrcode.png" alt=""></td>-->
+<!--                </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
+<!--        </div>-->
 
 </div>

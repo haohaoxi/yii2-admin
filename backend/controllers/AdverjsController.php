@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\components\Func;
+use yii\helpers\Url;
 /**
  * AdverjsController implements the CRUD actions for Adverjs model.
  */
@@ -110,7 +111,7 @@ class AdverjsController extends BaseController
     }
 
     public function actionAjaxjs($content,$admin_id,$enum_id){
-        $addurl = Yii::$app->request->hostInfo;
+        $addurl = Yii::$app->request->hostInfo.Url::base();
 //        $path = '\\'.'statics'.'\\'.'themes\\admin\\adverjs\\';
         $path = '/statics/themes/admin/adverjs';
        if(Yii::$app->request->get()){

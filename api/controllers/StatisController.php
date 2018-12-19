@@ -42,9 +42,9 @@ class StatisController extends  ActiveController
                 $push = $redis->lpush("queue",$data);//入队 列表
                 $redis->set("list",$push);
                 echo $push;
-//                if($push){
-//                    echo "入队成功";
-//                }
+                if($push){
+                    echo "入队成功";
+                }
 //               FunctionRand::View(1,'success','ok',1);
             }else{
 //                FunctionRand::Error('2','请求参数不正确');
@@ -77,7 +77,7 @@ class StatisController extends  ActiveController
         var_dump($vals);
         $content = substr($vals,0,-1);
         $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size,phone_pc) values $content";
-        
+
 //        echo $sql;
         $content  = $connection->createCommand("$sql")->execute();
 //        $endtiem = microtime(true);

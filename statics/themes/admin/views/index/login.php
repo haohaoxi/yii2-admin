@@ -3,6 +3,7 @@ use yii\bootstrap\BootstrapAsset;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use common\widgets\Alert;
+use yii\helpers\Url;
 
 BootstrapAsset::register($this);
 
@@ -17,7 +18,7 @@ $this->title = '管理员登录';
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <link href="/statics/themes/admin/css/style.css" rel="stylesheet">
+    <link href="<?=Url::base();?>/statics/themes/admin/css/style.css" rel="stylesheet">
 </head>
 
 <body class="login-body">

@@ -137,7 +137,7 @@ $allMenus = Menu::getMenu();
         $menuItems[] = '<li class="dropdown notification-menu">'
             . '<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img '
         .'src='. Url::base().
-            '/statics/themes/admin/images/user-avatar.png'.'
+            '/statics/themes/admin/images/user-sl.jpg'.'
          alt="1111" />'
             . Yii::$app->user->identity->username
             . '<span class="caret"></span></a>'
