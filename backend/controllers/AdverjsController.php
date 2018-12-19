@@ -120,7 +120,7 @@ class AdverjsController extends BaseController
                $pathadd = dirname(Yii::$app->basePath).$path;//js文件的绝对路径
 
                if(!is_dir($pathadd)){
-                   mkdir($pathadd,0777,true);
+                   mkdir($pathadd,777,true);
                    chmod($pathadd,777);
                }
                sleep(1);

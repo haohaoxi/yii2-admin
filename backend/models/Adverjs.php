@@ -128,7 +128,7 @@ class Adverjs extends \yii\db\ActiveRecord
     }
         
         let scripts = document.createElement('script');
-        scripts.src = 'http://adcapi.com/statis/thestal?admin_id=$admin_id&admin_name=$enum_id&ip='+returnCitySN.cip+
+        scripts.src = '$addurl/statis/thestal?admin_id=$admin_id&admin_name=$enum_id&ip='+returnCitySN.cip+
         \"&phone_size=\"+window.screen.height+'X'+window.screen.width+\"&phone_model=\"+os+\"&phone_pc=\"+phone_pc;
         scripts.id = 'adver'
         scripts.type = 'text/javascript'
