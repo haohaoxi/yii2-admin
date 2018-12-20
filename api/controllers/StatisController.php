@@ -45,6 +45,7 @@ class StatisController extends  ActiveController
                 if($push){
                     echo "入队成功";
                 }
+                die;
 //               FunctionRand::View(1,'success','ok',1);
             }else{
 //                FunctionRand::Error('2','请求参数不正确');

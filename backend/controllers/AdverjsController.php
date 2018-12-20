@@ -111,8 +111,15 @@ class AdverjsController extends BaseController
     }
 
     public function actionAjaxjs($content,$admin_id,$enum_id){
-        $addurl = Yii::$app->request->hostInfo.Url::base();
-//        $path = '\\'.'statics'.'\\'.'themes\\admin\\adverjs\\';
+        $addinfo =  Yii::$app->request->hostInfo;
+        $addbase = Url::base();
+        if(!empty($addbase)){
+            $addurl = $addinfo.$addbase;
+            $addinfobase = $addinfo.$addbase."/api/web";
+        }else{
+            $addurl = $addinfo.$addbase;
+            $addinfobase = "http://adcapi.com";
+        }
         $path = '/statics/themes/admin/adverjs';
        if(Yii::$app->request->get()){
            if(isset($content)){
@@ -125,7 +132,7 @@ class AdverjsController extends BaseController
                }
                sleep(1);
                $name = Func::getAbc("5");//获得js文件名称
-               $text_js = Adverjs::wriTcontent($arraylist,$admin_id,$enum_id,$addurl);
+               $text_js = Adverjs::wriTcontent($arraylist,$admin_id,$enum_id,$addurl,$addinfobase);
                $jsfile = fopen($pathadd.'/'.$name.'.js', "w"); //有就打开没有则创建的js文件名称
 
                fwrite($jsfile,$text_js);//写入文件内容

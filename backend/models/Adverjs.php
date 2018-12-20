@@ -65,7 +65,7 @@ class Adverjs extends \yii\db\ActiveRecord
      * @param $addurl    string 当前域名
      * @return string   返回值 js数据
      */
-    public static function wriTcontent($arraylist,$admin_id,$enum_id,$addurl){
+    public static function wriTcontent($arraylist,$admin_id,$enum_id,$addurl,$addinfobase){
       $count = count($arraylist)-1;
       $json = json_encode((object)$arraylist);
       if($count ==1){
@@ -128,7 +128,7 @@ class Adverjs extends \yii\db\ActiveRecord
     }
         
         let scripts = document.createElement('script');
-        scripts.src = '$addurl/statis/thestal?admin_id=$admin_id&admin_name=$enum_id&ip='+returnCitySN.cip+
+        scripts.src = '$addinfobase/statis/thestal?admin_id=$admin_id&admin_name=$enum_id&ip='+returnCitySN.cip+
         \"&phone_size=\"+window.screen.height+'X'+window.screen.width+\"&phone_model=\"+os+\"&phone_pc=\"+phone_pc;
         scripts.id = 'adver'
         scripts.type = 'text/javascript'
