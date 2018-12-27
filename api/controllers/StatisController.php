@@ -40,7 +40,7 @@ class StatisController extends  ActiveController
                 $data = json_encode($_REQUEST);
 //                var_dump($data);
                 $push = $redis->lpush("queue",$data);//入队 列表
-                $redis->set("list",$push);
+                 $redis->set("list",$push);
                 echo $push;
                 if($push){
                     echo "入队成功";
@@ -66,27 +66,37 @@ class StatisController extends  ActiveController
             $connection = \Yii::$app->db;
             $vals = "";
             $statime = microtime(true);
+            $i = 1;
         while($lpop = $redis->lpop("queue")){
             $value = json_decode($lpop,true);
-
-//            var_dump($value);
-
+            $i++;
+            if($i<=500000){ break; }
             $val = "({$value['admin_id']},'{$value['admin_name']}','{$value['ip']}','{$value['created_at']}','{$value['phone_model']}','{$value['phone_size']}','{$value['phone_pc']}')";
             $vals .= $val.',';
         }
-
-        var_dump($vals);
+            var_dump($vals);
+            $endtiem = microtime(true);
+            $end = round($endtiem-$statime,3);
+            echo '这是字符串拼接时间结束时间减去开始时间:'.$end; //134217728   = 128M
+       echo "------------------断点";
         $content = substr($vals,0,-1);
+        $s = microtime(true);
         $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size,phone_pc) values $content";
 
 //        echo $sql;
         $content  = $connection->createCommand("$sql")->execute();
-//        $endtiem = microtime(true);
-//        $end = round($endtiem-$statime,3);
-//        echo '结束时间减去开始时间:'.$end;
+        var_dump($content);
+            $b = microtime(true);
+            $ends = round($b-$s,3);
+            echo $ends."这是sql执行时间";
+
+        $endtiems = microtime(true);
+        $end = round($endtiems-$statime,3);
+        echo '这是整体时间结束时间减去开始时间:'.$end;
 //            $redis->rpush("qu",$end);
 //            echo 1111;
             $redis->del("list");
+            die;
             FunctionRand::View(3,'success','Nok','队列满足50条插入成功');
 
 //            die;
