@@ -66,11 +66,11 @@ class StatisController extends  ActiveController
             $connection = \Yii::$app->db;
             $vals = "";
             $statime = microtime(true);
-            $i = 1;
+            $i = 0;
         while($lpop = $redis->lpop("queue")){
             $value = json_decode($lpop,true);
             $i++;
-            if($i<=500000){ break; }
+            if( $i>50000){ break; }
             $val = "({$value['admin_id']},'{$value['admin_name']}','{$value['ip']}','{$value['created_at']}','{$value['phone_model']}','{$value['phone_size']}','{$value['phone_pc']}')";
             $vals .= $val.',';
         }
