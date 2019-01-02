@@ -66,11 +66,11 @@ class StatisController extends  ActiveController
             $connection = \Yii::$app->db;
             $vals = "";
             $statime = microtime(true);
-            $i = 0;
+//            $i = 0;
         while($lpop = $redis->lpop("queue")){
             $value = json_decode($lpop,true);
-            $i++;
-            if( $i>50000){ break; }
+//            $i++;
+//            if( $i>50000){ break; }
             $val = "({$value['admin_id']},'{$value['admin_name']}','{$value['ip']}','{$value['created_at']}','{$value['phone_model']}','{$value['phone_size']}','{$value['phone_pc']}')";
             $vals .= $val.',';
         }
@@ -95,7 +95,7 @@ class StatisController extends  ActiveController
         echo '这是整体时间结束时间减去开始时间:'.$end;
 //            $redis->rpush("qu",$end);
 //            echo 1111;
-            $redis->del("list");
+//            $redis->del("list");
             die;
             FunctionRand::View(3,'success','Nok','队列满足50条插入成功');
 
