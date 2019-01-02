@@ -60,51 +60,25 @@ class StatisController extends  ActiveController
 
     public function actionThelpop(){
         $redis = Yii::$app->redis;
-//        var_dump($redis->get("list"));
-
         if($redis->get("list")){
             $connection = \Yii::$app->db;
             $vals = "";
             $statime = microtime(true);
-//            $i = 0;
         while($lpop = $redis->lpop("queue")){
             $value = json_decode($lpop,true);
-//            $i++;
-//            if( $i>50000){ break; }
             $val = "({$value['admin_id']},'{$value['admin_name']}','{$value['ip']}','{$value['created_at']}','{$value['phone_model']}','{$value['phone_size']}','{$value['phone_pc']}')";
             $vals .= $val.',';
         }
-            var_dump($vals);
-            $endtiem = microtime(true);
-            $end = round($endtiem-$statime,3);
-            echo '这是字符串拼接时间结束时间减去开始时间:'.$end; //134217728   = 128M
-       echo "------------------断点";
         $content = substr($vals,0,-1);
-        $s = microtime(true);
         $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size,phone_pc) values $content";
-
-//        echo $sql;
         $content  = $connection->createCommand("$sql")->execute();
-        var_dump($content);
-            $b = microtime(true);
-            $ends = round($b-$s,3);
-            echo $ends."这是sql执行时间";
+        $redis->del("list");
+        die;
+            FunctionRand::View(3,'success','Nok',$content);
 
-        $endtiems = microtime(true);
-        $end = round($endtiems-$statime,3);
-        echo '这是整体时间结束时间减去开始时间:'.$end;
-//            $redis->rpush("qu",$end);
-//            echo 1111;
-//            $redis->del("list");
-            die;
-            FunctionRand::View(3,'success','Nok','队列满足50条插入成功');
-
-//            die;
         } else{
             FunctionRand::View(3,'success','Nok','2');
-//            die;
         }
-//        die;
     }
 
     /**
