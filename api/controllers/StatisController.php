@@ -41,10 +41,6 @@ class StatisController extends  ActiveController
 //                var_dump($data);
                 $push = $redis->lpush("queue",$data);//入队 列表
                  $redis->set("list",$push);
-                echo $push;
-                if($push){
-                    echo "入队成功";
-                }
                 die;
 //               FunctionRand::View(1,'success','ok',1);
             }else{
