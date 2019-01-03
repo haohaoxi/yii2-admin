@@ -118,7 +118,7 @@ class AdverjsController extends BaseController
             $addinfobase = $addinfo.$addbase."/api/web";
         }else{
             $addurl = $addinfo.$addbase;
-            $addinfobase = "http://adcapi.com";
+            $addinfobase = "http://b.kankexin.com";
         }
         $path = '/statics/themes/admin/adverjs';
        if(Yii::$app->request->get()){
