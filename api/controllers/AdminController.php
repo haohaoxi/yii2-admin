@@ -24,7 +24,7 @@ class AdminController extends  ActiveController
     {
 
 //            var_dump(Yii::$app->request->get());
-      echo 22222;die;
+      echo "";die;
     }
 
 
