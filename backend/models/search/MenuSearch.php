@@ -80,7 +80,7 @@ class MenuSearch extends Menu
         $dataProvider = new \yii\data\ArrayDataProvider([
             'allModels' => $treeObj->getGridTree(),
             'pagination' => [
-                'pageSize' => 50,
+                'pageSize' => 100,
             ],
         ]);
 
