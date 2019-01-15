@@ -15,21 +15,6 @@ use yii\filters\VerbFilter;
 class AndroidController extends BaseController
 {
     /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['POST'],
-                ],
-            ],
-        ];
-    }
-
-    /**
      * Lists all Android models.
      * @return mixed
      */

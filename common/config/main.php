@@ -3,6 +3,7 @@ return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'language' => 'zh-CN',  //目标语言
     'runtimePath'  => dirname(dirname(__DIR__)) . '/storage/runtime',
+    'timeZone' => 'Asia/Shanghai',
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',

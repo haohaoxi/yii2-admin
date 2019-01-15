@@ -14,6 +14,7 @@ use api\functionGlobal\FunctionRand;
 class StatisController extends  ActiveController
 {
     public $modelClass = "";
+    public $list;
     public function actions(){
         $action = parent::actions();
         unset($action['index']);
@@ -30,7 +31,13 @@ class StatisController extends  ActiveController
     public function getmicrotime(){
         return time();
     }
-//redis 入队操作
+    /**
+     * redis 入队
+     * queue    列表形式存入数据
+     * num    数字类型统计成功插入队列条数 在出队插入时用到
+     * jishu  单纯的统计成功条数 脚本不会清楚 手动清楚
+     **/
+
     public function actionThestal()
     {
         if(Yii::$app->request->get()){
@@ -38,9 +45,9 @@ class StatisController extends  ActiveController
             if($_REQUEST){
                 $_REQUEST['created_at'] = time();
                 $data = json_encode($_REQUEST);
-//                var_dump($data);
-                $push = $redis->lpush("queue",$data);//入队 列表
-                 $redis->set("list",$push);
+                $redis->lpush("queue",$data);
+                $redis->incr("num");
+                $redis->incr("jishu");
                 die;
 //               FunctionRand::View(1,'success','ok',1);
             }else{
@@ -56,24 +63,27 @@ class StatisController extends  ActiveController
 
     public function actionThelpop(){
         $redis = Yii::$app->redis;
-        if($redis->get("list")){
+        if($redis->get("num")){
             $connection = \Yii::$app->db;
             $vals = "";
-            $statime = microtime(true);
+            $i = 0;
         while($lpop = $redis->lpop("queue")){
             $value = json_decode($lpop,true);
+            $i++;
+            $redis->decr("num");
+            if( $i>2000){ break; }
             $val = "({$value['admin_id']},'{$value['admin_name']}','{$value['ip']}','{$value['created_at']}','{$value['phone_model']}','{$value['phone_size']}','{$value['phone_pc']}')";
             $vals .= $val.',';
+
         }
         $content = substr($vals,0,-1);
         $sql = "INSERT INTO yunmei_statistics (admin_id,admin_name,ip,created_at,phone_model,phone_size,phone_pc) values $content";
         $content  = $connection->createCommand("$sql")->execute();
-        $redis->del("list");
         die;
             FunctionRand::View(3,'success','Nok',$content);
 
         } else{
-            FunctionRand::View(3,'success','Nok','2');
+            FunctionRand::View(3,'success','Nok','not');
         }
     }
 

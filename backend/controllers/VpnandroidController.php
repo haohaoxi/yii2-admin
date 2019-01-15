@@ -3,30 +3,26 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\Syslog;
-use backend\models\search\SyslogSearch;
+use backend\models\Vpnandroid;
+use backend\models\search\VpnandroidSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * SyslogController implements the CRUD actions for Syslog model.
+ * VpnandroidController implements the CRUD actions for Vpnandroid model.
  */
-class SyslogController extends BaseController
+class VpnandroidController extends BaseController
 {
-    public $_log_module = '系统日志';
-
     /**
-     *
-     * Lists all Syslog models.
+     * Lists all Vpnandroid models.
      * @return mixed
      */
     public function actionIndex()
     {
-
-        $this->_log_action = '访问了系统日志列表';
-        $searchModel = new SyslogSearch();
+        $searchModel = new VpnandroidSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -34,7 +30,7 @@ class SyslogController extends BaseController
     }
 
     /**
-     * Displays a single Syslog model.
+     * Displays a single Vpnandroid model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -47,13 +43,14 @@ class SyslogController extends BaseController
     }
 
     /**
-     * Creates a new Syslog model.
+     * Creates a new Vpnandroid model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Syslog();
+        $model = new Vpnandroid();
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
@@ -64,7 +61,7 @@ class SyslogController extends BaseController
     }
 
     /**
-     * Updates an existing Syslog model.
+     * Updates an existing Vpnandroid model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -84,7 +81,7 @@ class SyslogController extends BaseController
     }
 
     /**
-     * Deletes an existing Syslog model.
+     * Deletes an existing Vpnandroid model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -97,16 +94,47 @@ class SyslogController extends BaseController
         return $this->redirect(['index']);
     }
 
+    public function actionStatus($list,$nameid){
+        if(Yii::$app->request->get()){
+            if($nameid){
+              $arrlist =  explode(",",substr($list,0,strlen($list)-1));
+              $num = "";
+             if($nameid=="but"){
+                 foreach ($arrlist as $key=>$value){
+                     $num .= Vpnandroid::updateAll(["isinuse"=>0],['id'=>$value]);
+                 }
+                 Yii::$app->session->setFlash('success', '操作成功成功修改了'.strlen($num)."状态为无效");
+             }else if($nameid=="buts"){
+                 foreach ($arrlist as $key=>$value){
+                     $num .= Vpnandroid::updateAll(["isinuse"=>1],["id"=>$value]);
+                 }
+                 Yii::$app->session->setFlash('success','操作成功修改了'.strlen($num)."状态为有效");
+             }else if($nameid=="dele"){
+                    Vpnandroid::deleteAll(['in','id',$arrlist]);
+                 Yii::$app->session->setFlash('success','成功删除'.count($arrlist)."记录");
+             }else{
+                 Yii::$app->session->setFlash('success','参数丢失请检查');
+             }
+
+            }else{
+                echo "参数丢失";
+            }
+        }else{
+            echo "错误";
+        }
+
+    }
+
     /**
-     * Finds the Syslog model based on its primary key value.
+     * Finds the Vpnandroid model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Syslog the loaded model
+     * @return Vpnandroid the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Syslog::findOne($id)) !== null) {
+        if (($model = Vpnandroid::findOne($id)) !== null) {
             return $model;
         }
 
